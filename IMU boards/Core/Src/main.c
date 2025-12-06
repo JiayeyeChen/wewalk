@@ -21,6 +21,7 @@
 #include "dma.h"
 #include "fdcan.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -58,6 +59,7 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 float gyro[3], accel[3], temp;
+float timer_count = 0.0f;
 /* USER CODE END 0 */
 
 /**
@@ -92,11 +94,13 @@ int main(void)
   MX_DMA_Init();
   MX_SPI2_Init();
   MX_FDCAN2_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
     while(BMI088_init())
     {
         ;
     }
+  HAL_TIM_Base_Start_IT(&htim1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,8 +110,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-        BMI088_read(gyro, accel, &temp);
-        HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
@@ -171,7 +173,11 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  BMI088_read(gyro, accel, &temp);
+  timer_count += 0.005f;
+}
 /* USER CODE END 4 */
 
 /**
