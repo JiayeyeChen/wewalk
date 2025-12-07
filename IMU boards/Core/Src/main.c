@@ -59,7 +59,34 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 float gyro[3], accel[3], temp;
+int16_t gyro_raw[3], accel_raw[3];
 float timer_count = 0.0f;
+
+/*
+ID:
+Thigh acc = 10
+Thigh gyr = 11
+Shank acc = 12
+Shank gyr = 13
+*/
+FDCAN_TxHeaderTypeDef accTxHeader = 
+{
+  .Identifier = 12,
+  .IdType = FDCAN_STANDARD_ID,
+  .TxFrameType = FDCAN_DATA_FRAME,
+  .DataLength = FDCAN_DLC_BYTES_6,
+  .FDFormat = FDCAN_CLASSIC_CAN,
+  .TxEventFifoControl = FDCAN_NO_TX_EVENTS
+};
+FDCAN_TxHeaderTypeDef gyroTxHeader = 
+{
+  .Identifier = 13,
+  .IdType = FDCAN_STANDARD_ID,
+  .TxFrameType = FDCAN_DATA_FRAME,
+  .DataLength = FDCAN_DLC_BYTES_6,
+  .FDFormat = FDCAN_CLASSIC_CAN,
+  .TxEventFifoControl = FDCAN_NO_TX_EVENTS
+};
 /* USER CODE END 0 */
 
 /**
@@ -101,6 +128,7 @@ int main(void)
         ;
     }
   HAL_TIM_Base_Start_IT(&htim1);
+  HAL_FDCAN_Start(&hfdcan2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -175,7 +203,9 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  BMI088_read(gyro, accel, &temp);
+  BMI088_read(gyro, accel, &temp, gyro_raw, accel_raw);
+  HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &accTxHeader, (const uint8_t*)accel_raw);
+  HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &gyroTxHeader, (const uint8_t*)gyro_raw);
   timer_count += 0.005f;
 }
 /* USER CODE END 4 */

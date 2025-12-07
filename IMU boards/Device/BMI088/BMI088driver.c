@@ -284,7 +284,7 @@ uint8_t bmi088_gyro_init(void)
 * @details:    	读取BMI088传感器数据，包括加速度、陀螺仪和温度
 ************************************************************************
 **/
-void BMI088_read(float gyro[3], float accel[3], float *temperate)
+void BMI088_read(float gyro[3], float accel[3], float *temperate, int16_t gyro_raw[3], int16_t accel_raw[3])
 {
     uint8_t buf[8] = {0, 0, 0, 0, 0, 0};
     int16_t bmi088_raw_temp;
@@ -292,20 +292,26 @@ void BMI088_read(float gyro[3], float accel[3], float *temperate)
     BMI088_accel_read_muli_reg(BMI088_ACCEL_XOUT_L, buf, 6);
 
     bmi088_raw_temp = (int16_t)((buf[1]) << 8) | buf[0];
+    accel_raw[0] = bmi088_raw_temp;
     accel[0] = bmi088_raw_temp * BMI088_ACCEL_SEN;
     bmi088_raw_temp = (int16_t)((buf[3]) << 8) | buf[2];
+    accel_raw[1] = bmi088_raw_temp;
     accel[1] = bmi088_raw_temp * BMI088_ACCEL_SEN;
     bmi088_raw_temp = (int16_t)((buf[5]) << 8) | buf[4];
+    accel_raw[2] = bmi088_raw_temp;
     accel[2] = bmi088_raw_temp * BMI088_ACCEL_SEN;
 
     BMI088_gyro_read_muli_reg(BMI088_GYRO_CHIP_ID, buf, 8);
     if(buf[0] == BMI088_GYRO_CHIP_ID_VALUE)
     {
         bmi088_raw_temp = (int16_t)((buf[3]) << 8) | buf[2];
+        gyro_raw[0] = bmi088_raw_temp;
         gyro[0] = bmi088_raw_temp * BMI088_GYRO_SEN;
         bmi088_raw_temp = (int16_t)((buf[5]) << 8) | buf[4];
+        gyro_raw[1] = bmi088_raw_temp;
         gyro[1] = bmi088_raw_temp * BMI088_GYRO_SEN;
         bmi088_raw_temp = (int16_t)((buf[7]) << 8) | buf[6];
+        gyro_raw[2] = bmi088_raw_temp;
         gyro[2] = bmi088_raw_temp * BMI088_GYRO_SEN;
     }
     BMI088_accel_read_muli_reg(BMI088_TEMP_M, buf, 2);
