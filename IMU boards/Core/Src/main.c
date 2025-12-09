@@ -27,6 +27,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "BMI088driver.h"
+#include "imu_task.h"
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,30 +62,44 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 float gyro[3], accel[3], temp;
 int16_t gyro_raw[3], accel_raw[3];
-float timer_count = 0.0f;
-
+float IMU_fusion_task_count = 0.0f;
+float can_bus_task_count = 0.0f;
+uint8_t can_tx1[8];
+uint8_t can_tx2[8];
+uint8_t can_tx3[8];
 /*
 ID:
-Thigh acc = 10
-Thigh gyr = 11
-Shank acc = 12
-Shank gyr = 13
+Thigh tx1 = 10
+Thigh tx2 = 11
+Thigh tx3 = 12
+Shank tx1 = 13
+Shank tx2 = 14
+Shank tx3 = 15
 */
-FDCAN_TxHeaderTypeDef accTxHeader = 
-{
-  .Identifier = 12,
-  .IdType = FDCAN_STANDARD_ID,
-  .TxFrameType = FDCAN_DATA_FRAME,
-  .DataLength = FDCAN_DLC_BYTES_6,
-  .FDFormat = FDCAN_CLASSIC_CAN,
-  .TxEventFifoControl = FDCAN_NO_TX_EVENTS
-};
-FDCAN_TxHeaderTypeDef gyroTxHeader = 
+FDCAN_TxHeaderTypeDef tx1Header = 
 {
   .Identifier = 13,
   .IdType = FDCAN_STANDARD_ID,
   .TxFrameType = FDCAN_DATA_FRAME,
-  .DataLength = FDCAN_DLC_BYTES_6,
+  .DataLength = FDCAN_DLC_BYTES_8,
+  .FDFormat = FDCAN_CLASSIC_CAN,
+  .TxEventFifoControl = FDCAN_NO_TX_EVENTS
+};
+FDCAN_TxHeaderTypeDef tx2Header = 
+{
+  .Identifier = 14,
+  .IdType = FDCAN_STANDARD_ID,
+  .TxFrameType = FDCAN_DATA_FRAME,
+  .DataLength = FDCAN_DLC_BYTES_8,
+  .FDFormat = FDCAN_CLASSIC_CAN,
+  .TxEventFifoControl = FDCAN_NO_TX_EVENTS
+};
+FDCAN_TxHeaderTypeDef tx3Header = 
+{
+  .Identifier = 15,
+  .IdType = FDCAN_STANDARD_ID,
+  .TxFrameType = FDCAN_DATA_FRAME,
+  .DataLength = FDCAN_DLC_BYTES_8,
   .FDFormat = FDCAN_CLASSIC_CAN,
   .TxEventFifoControl = FDCAN_NO_TX_EVENTS
 };
@@ -122,12 +138,15 @@ int main(void)
   MX_SPI2_Init();
   MX_FDCAN2_Init();
   MX_TIM1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
     while(BMI088_init())
     {
         ;
     }
+  AHRS_init(imuQuat);
   HAL_TIM_Base_Start_IT(&htim1);
+  HAL_TIM_Base_Start_IT(&htim2);
   HAL_FDCAN_Start(&hfdcan2);
   /* USER CODE END 2 */
 
@@ -203,10 +222,27 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  BMI088_read(gyro, accel, &temp, gyro_raw, accel_raw);
-  HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &accTxHeader, (const uint8_t*)accel_raw);
-  HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &gyroTxHeader, (const uint8_t*)gyro_raw);
-  timer_count += 0.005f;
+  if (htim == &htim1)
+  {
+    BMI088_read(gyro, accel, &temp, gyro_raw, accel_raw);
+    ImuTask(gyro, accel, temp);
+    IMU_fusion_task_count += 0.001f;
+  }
+  else if (htim == &htim2)
+  {
+    memcpy(&can_tx1[0], accel_raw, 6);
+    memcpy(&can_tx1[6], &gyro_raw[0], 2);
+    memcpy(&can_tx2[0], &gyro_raw[1], 4);
+    memcpy(&can_tx2[4], &imuAngleDeg[0], 4);
+    memcpy(&can_tx3[0], &imuAngleDeg[1], 8);
+    HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &tx1Header, (const uint8_t*)can_tx1);
+    HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &tx2Header, (const uint8_t*)can_tx2);
+    HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &tx3Header, (const uint8_t*)can_tx3);
+    can_bus_task_count += 0.005f;
+  }
+
+
+  
 }
 /* USER CODE END 4 */
 

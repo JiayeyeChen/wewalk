@@ -85,7 +85,7 @@ FDCAN_TxHeaderTypeDef               rightMotorTxHeader =
 FDCAN_FilterTypeDef                 rightMotorRxFilter = 
 {
 	.IdType = FDCAN_STANDARD_ID,
-	.FilterIndex = 2,
+	.FilterIndex = 0,
 	.FilterType = FDCAN_FILTER_DUAL,
 	.FilterID1 = 0x140 + WEWALKMIDDLEWARE_RIGHT_MOTOR_ID,
 	.FilterID2 = 0x01,
@@ -93,24 +93,44 @@ FDCAN_FilterTypeDef                 rightMotorRxFilter =
 	.RxBufferIndex = 0
 };
 
-FDCAN_FilterTypeDef                 rightThighIMURxFilter = 
+FDCAN_FilterTypeDef                 rightThighIMURx1Filter = 
 {
 	.IdType = FDCAN_STANDARD_ID,
-	.FilterIndex = 0,
+	.FilterIndex = 1,
 	.FilterType = FDCAN_FILTER_DUAL,
 	.FilterID1 = 10,
 	.FilterID2 = 11,
 	.FilterConfig = FDCAN_FILTER_TO_RXFIFO1_HP,
 	.RxBufferIndex = 0
 };
-
-FDCAN_FilterTypeDef                 rightShankIMURxFilter = 
+FDCAN_FilterTypeDef                 rightThighIMURx2Filter = 
 {
 	.IdType = FDCAN_STANDARD_ID,
-	.FilterIndex = 1,
+	.FilterIndex = 2,
 	.FilterType = FDCAN_FILTER_DUAL,
 	.FilterID1 = 12,
-	.FilterID2 = 13,
+	.FilterID2 = 0,
+	.FilterConfig = FDCAN_FILTER_TO_RXFIFO1_HP,
+	.RxBufferIndex = 0
+};
+
+FDCAN_FilterTypeDef                 rightShankIMURx1Filter = 
+{
+	.IdType = FDCAN_STANDARD_ID,
+	.FilterIndex = 3,
+	.FilterType = FDCAN_FILTER_DUAL,
+	.FilterID1 = 13,
+	.FilterID2 = 14,
+	.FilterConfig = FDCAN_FILTER_TO_RXFIFO1_HP,
+	.RxBufferIndex = 0
+};
+FDCAN_FilterTypeDef                 rightShankIMURx2Filter = 
+{
+	.IdType = FDCAN_STANDARD_ID,
+	.FilterIndex = 4,
+	.FilterType = FDCAN_FILTER_DUAL,
+	.FilterID1 = 15,
+	.FilterID2 = 0,
 	.FilterConfig = FDCAN_FILTER_TO_RXFIFO1_HP,
 	.RxBufferIndex = 0
 };
@@ -121,6 +141,7 @@ float                               motor_scheduler_time_check = 0.0f;
 
 /*IMU*/
 union Int16UInt8 accThigh[3], gyroThigh[3], accShank[3], gyroShank[3];
+union FloatUInt8 angleThigh[3], angleShank[3];
 float thighIMURxCount = 0.0f;
 float shankIMURxCount = 0.0f;
 
@@ -220,8 +241,10 @@ int main(void)
   //////////////////////////////////////
   /////////////////IMUs/////////////////
   //////////////////////////////////////
-  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightThighIMURxFilter);
-  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightShankIMURxFilter);
+  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightThighIMURx1Filter);
+  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightThighIMURx2Filter);
+  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightShankIMURx1Filter);
+  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightShankIMURx2Filter);
   HAL_FDCAN_Start(&hfdcan1);
   HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0);
   HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO1_NEW_MESSAGE, 0);
@@ -1029,35 +1052,59 @@ void HAL_FDCAN_RxFifo1Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo1ITs)
   if (temp_rxheader.Identifier == 10)
   {
     memcpy(&accThigh[0].b8[0], &temp_can_rx[0], 6);
+    memcpy(&gyroThigh[0].b8, &temp_can_rx[6], 2);
     hWeWalkRight.data.accThigh[0].f = ((float)accThigh[0].b16) * 0.0008974358974f;
     hWeWalkRight.data.accThigh[1].f = ((float)accThigh[1].b16) * 0.0008974358974f;
     hWeWalkRight.data.accThigh[2].f = ((float)accThigh[2].b16) * 0.0008974358974f;
-    thighIMURxCount += 0.0025f;
+    hWeWalkRight.data.gyroThigh[0].f = ((float)gyroThigh[0].b16) * 0.00106526443603169529841533860381f;
+    thighIMURxCount += 0.00166666666f;
   }
   else if (temp_rxheader.Identifier == 11)
   {
-    memcpy(&gyroThigh[0].b8[0], &temp_can_rx[0], 6);
-    hWeWalkRight.data.gyroThigh[0].f = ((float)gyroThigh[0].b16) * 0.00106526443603169529841533860381f;
+    memcpy(&gyroThigh[1].b8[0], &temp_can_rx[0], 4);
+    memcpy(&angleThigh[0].b8[0], &temp_can_rx[4], 4);
     hWeWalkRight.data.gyroThigh[1].f = ((float)gyroThigh[1].b16) * 0.00106526443603169529841533860381f;
     hWeWalkRight.data.gyroThigh[2].f = ((float)gyroThigh[2].b16) * 0.00106526443603169529841533860381f;
-    thighIMURxCount += 0.0025f;
+    hWeWalkRight.data.angleThigh[0].f = angleThigh[0].f;
+    thighIMURxCount += 0.00166666666f;
   }
-  if (temp_rxheader.Identifier == 12)
+  else if (temp_rxheader.Identifier == 12)
+  {
+    memcpy(&angleThigh[1].b8[0], &temp_can_rx[0], 8);
+    hWeWalkRight.data.angleThigh[1].f = angleThigh[1].f;
+    hWeWalkRight.data.angleThigh[2].f = angleThigh[2].f;
+    thighIMURxCount += 0.00166666666f;
+  }
+  
+  if (temp_rxheader.Identifier == 13)
   {
     memcpy(&accShank[0].b8[0], &temp_can_rx[0], 6);
+    memcpy(&gyroShank[0].b8, &temp_can_rx[6], 2);
     hWeWalkRight.data.accShank[0].f = ((float)accShank[0].b16) * 0.0008974358974f;
     hWeWalkRight.data.accShank[1].f = ((float)accShank[1].b16) * 0.0008974358974f;
     hWeWalkRight.data.accShank[2].f = ((float)accShank[2].b16) * 0.0008974358974f;
-    shankIMURxCount += 0.0025f;
-  }
-  else if (temp_rxheader.Identifier == 13)
-  {
-    memcpy(&gyroShank[0].b8[0], &temp_can_rx[0], 6);
     hWeWalkRight.data.gyroShank[0].f = ((float)gyroShank[0].b16) * 0.00106526443603169529841533860381f;
+    shankIMURxCount += 1.0f/600.0f;
+  }
+  else if (temp_rxheader.Identifier == 14)
+  {
+    memcpy(&gyroShank[1].b8[0], &temp_can_rx[0], 4);
+    memcpy(&angleShank[0].b8[0], &temp_can_rx[4], 4);
     hWeWalkRight.data.gyroShank[1].f = ((float)gyroShank[1].b16) * 0.00106526443603169529841533860381f;
     hWeWalkRight.data.gyroShank[2].f = ((float)gyroShank[2].b16) * 0.00106526443603169529841533860381f;
-    shankIMURxCount += 0.0025f;
+    hWeWalkRight.data.angleShank[0].f = angleShank[0].f;
+    shankIMURxCount += 1.0f/600.0f;
   }
+  else if (temp_rxheader.Identifier == 15)
+  {
+    memcpy(&angleShank[1].b8[0], &temp_can_rx[0], 8);
+    hWeWalkRight.data.angleShank[1].f = angleShank[1].f;
+    hWeWalkRight.data.angleShank[2].f = angleShank[2].f;
+    shankIMURxCount += 1.0f/600.0f;
+  }
+  
+  
+
   UNUSED(hfdcan);
   UNUSED(RxFifo1ITs);
 }
