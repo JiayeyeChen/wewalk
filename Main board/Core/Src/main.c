@@ -281,10 +281,7 @@ int main(void)
       hWeWalk.ifSaveSettingRequired = 0;
       HAL_Delay(1000);
     }
-    
-////////////////////////////////////////////    WEWALK_GaitPhaseDetection(hWeWalk.right);
-    
-    
+
     if (wewalk_ui_task_trigger_flag)
     {
       wewalk_ui_task_trigger_flag = 0;

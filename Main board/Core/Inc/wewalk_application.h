@@ -74,17 +74,17 @@ typedef struct
 typedef struct
 {
   enum WEWALK_UNILATERAL_GAIT_PHASE_DETECTION_ALGORITHM      gaitPhaseDetectionType;
-  LowPassFilterHandle                                       hFilterGaitPhaseDetectionIndicator;
+  LowPassFilterHandle                                        hFilterGaitPhaseDetectionIndicator;
 }GaitPhaseDetectionHandle;
 
 typedef struct
 {
-  WeWalkUnilateralDataStruct              data;
-  WeWalkUnilateralSettingsStruct          setting;
+  WeWalkUnilateralDataStruct             data;
+  WeWalkUnilateralSettingsStruct         setting;
   uint32_t                               dataPtr, settingPtr;
   TIM_HandleTypeDef*                     hLEDLogoPWM;
   uint32_t                               ledLogoPWMChannel;
-  WeWalkMotorCommand                      motorCommand;
+  WeWalkMotorCommand                     motorCommand;
   SineSwingHandle                        hSineSwing;
   TorquePulseHandle                      hTorquePulse;
   GaitPhaseDetectionHandle*              hGaitPhaseDetect;
@@ -102,9 +102,9 @@ typedef struct
 
 typedef struct
 {
-  WeWalkUIHandle*                  hUI;
+  WeWalkUIHandle*                 hUI;
   SerialProtocolEchoHandle*       serialPC;
-  WeWalkUnilateralHandle*          left, *right;
+  WeWalkUnilateralHandle*         left, *right;
   uint8_t                         application_type;
   enum WEWALK_MAIN_TASK_ENUM       mainTask;
   enum WEWALK_WALK_ASSISTANCE_MODE assistanceMode;

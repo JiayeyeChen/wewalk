@@ -343,18 +343,19 @@ void WEWALK_Main(WeWalkHandle* hwewalk)
     {
       hwewalk->left->motorCommand.ifEnabled = 1;
       hwewalk->right->motorCommand.ifEnabled = 1;
+			WEWALK_GaitPhaseDetection(hwewalk->right);
       if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_FREE_WALKING)
         WEWALK_FreeWalkingControl(hwewalk);
 //////      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_ACC_PRO_ASSISTANCE)
 //////        WEWALK_AccelerationProportionateControl(hwewalk);
-      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_PURE_IMPEDANCE_CONTROL)
-        WEWALK_ImpedanceControl(hwewalk);
+//////      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_PURE_IMPEDANCE_CONTROL)
+//////        WEWALK_ImpedanceControl(hwewalk);
 //////      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_SINE_SWING)
 //////        WEWALK_SineSwingControl(hwewalk->right);
 //////      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_FULL_ASSISTANCE_1)
 //////        WEWALK_FullAssistance_1(hwewalk);
-      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_TORQUE_PULSE)
-        WEWALK_TorquePulseControl(hwewalk->right);
+//////      else if (hwewalk->assistanceMode == WEWALK_WALK_ASSISTANCE_TORQUE_PULSE)
+//////        WEWALK_TorquePulseControl(hwewalk->right);
       else
       {
         hwewalk->left->motorCommand.ifEnabled = 0;
@@ -412,6 +413,8 @@ void WEWALK_UpdatePerception(WeWalkHandle* hwewalk)
 
 void WEWALK_FreeWalkingControl(WeWalkHandle* hwewalk)
 {
+	hwewalk->right->motorCommand.controlMode = WEWALK_UNILATERAL_MOTOR_TASK_CURRENT_CONTROL;
+	hwewalk->right->motorCommand.cmd.f = 0.0f;
 }
 
 void WEWALK_AccelerationProportionateControl(WeWalkHandle* hwewalk)
