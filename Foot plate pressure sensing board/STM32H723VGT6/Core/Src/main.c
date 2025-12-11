@@ -87,6 +87,18 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
 
+FDCAN_TxHeaderTypeDef canTxHeader = 
+{
+  .Identifier = 20,
+  .IdType = FDCAN_STANDARD_ID,
+  .TxFrameType = FDCAN_DATA_FRAME,
+  .DataLength = FDCAN_DLC_BYTES_8,
+  .FDFormat = FDCAN_CLASSIC_CAN,
+  .TxEventFifoControl = FDCAN_NO_TX_EVENTS
+};
+
+uint8_t can_tx[8];
+
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
@@ -2166,7 +2178,7 @@ void ADCTaskFunc(void *argument)
 {
   /* USER CODE BEGIN ADCTaskFunc */
   /* Infinite loop */
-    
+    HAL_FDCAN_Start(&hfdcan2);
     // Start first conversion
   for(;;)
   {
@@ -2175,12 +2187,14 @@ void ADCTaskFunc(void *argument)
 		adc_results[0]=ADS1115_ReadVoltage(&hi2c1,3,ADS1115_PGA_4_096V);
     osDelay(1);
 		adc_results[1]=ADS1115_ReadVoltage(&hi2c1,0,ADS1115_PGA_4_096V);
-    osDelay(1);
-		adc_results[2]=ADS1115_ReadVoltage(&hi2c1,1,ADS1115_PGA_4_096V);
-    osDelay(1);
-		adc_results[3]=ADS1115_ReadVoltage(&hi2c1,2,ADS1115_PGA_4_096V);
-    osDelay(1);
-		
+    osDelay(9);
+//		adc_results[2]=ADS1115_ReadVoltage(&hi2c1,1,ADS1115_PGA_4_096V);
+//    osDelay(1);
+//		adc_results[3]=ADS1115_ReadVoltage(&hi2c1,2,ADS1115_PGA_4_096V);
+//    osDelay(1);
+		memcpy(&can_tx[0], &adc_results[0], 4);
+    memcpy(&can_tx[4], &adc_results[1], 4);
+    HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan2, &canTxHeader, (const uint8_t*)can_tx);
   }
   /* USER CODE END ADCTaskFunc */
 }

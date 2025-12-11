@@ -48,6 +48,7 @@ typedef struct
   union UInt32UInt8 ifSwingPhase;
   union FloatUInt8 gaitPhaseIndicator;
   union FloatUInt8 angleThigh[3], angleShank[3];
+  union FloatUInt8 forceSensorToe, forceSensorHeel;
 }WeWalkUnilateralDataStruct;
 
 typedef struct

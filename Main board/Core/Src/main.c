@@ -130,7 +130,7 @@ FDCAN_FilterTypeDef                 rightShankIMURx2Filter =
 	.FilterIndex = 4,
 	.FilterType = FDCAN_FILTER_DUAL,
 	.FilterID1 = 15,
-	.FilterID2 = 0,
+	.FilterID2 = 20,
 	.FilterConfig = FDCAN_FILTER_TO_RXFIFO1_HP,
 	.RxBufferIndex = 0
 };
@@ -245,6 +245,7 @@ int main(void)
   HAL_FDCAN_ConfigFilter(&hfdcan1, &rightThighIMURx2Filter);
   HAL_FDCAN_ConfigFilter(&hfdcan1, &rightShankIMURx1Filter);
   HAL_FDCAN_ConfigFilter(&hfdcan1, &rightShankIMURx2Filter);
+//  HAL_FDCAN_ConfigFilter(&hfdcan1, &rightFootPlateSensorRxFilter);
   HAL_FDCAN_Start(&hfdcan1);
   HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0);
   HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO1_NEW_MESSAGE, 0);
@@ -1099,8 +1100,11 @@ void HAL_FDCAN_RxFifo1Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo1ITs)
     hWeWalkRight.data.angleShank[2].f = angleShank[2].f;
     shankIMURxCount += 1.0f/600.0f;
   }
-  
-  
+  else if (temp_rxheader.Identifier == 20)//Right foot plate sensor
+  {
+    memcpy(&hWeWalkRight.data.forceSensorToe.b8[0], &temp_can_rx[0], 4);
+    memcpy(&hWeWalkRight.data.forceSensorHeel.b8[0], &temp_can_rx[4], 4);
+  }
 
   UNUSED(hfdcan);
   UNUSED(RxFifo1ITs);
