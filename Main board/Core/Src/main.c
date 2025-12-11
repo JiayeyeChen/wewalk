@@ -232,7 +232,7 @@ int main(void)
   SERIALPROTOCOLECHO_EnableCommunication_CircularDMAMode(&hUI.serialUI);
   SERIALPROTOCOLECHO_SetNewDatalogSendLabelFunction(&hSerialPC, Datalog_SendLabel);
 	SERIALPROTOCOLECHO_SetNewDatalogSlot(&hSerialPC, datalog_data);
-  SERIALPROTOCOLECHO_SetNewDatalogSlotLength(&hSerialPC, 16);
+  SERIALPROTOCOLECHO_SetNewDatalogSlotLength(&hSerialPC, 24);
   
   /////////////////////////////////////
   //////////////Actuators//////////////
@@ -321,6 +321,14 @@ int main(void)
       datalog_data[13].f = hWeWalkRight.data.motorVel.f;
       datalog_data[14].f = hWeWalkRight.data.motorTorque.f;
       datalog_data[15].f = hWeWalkRight.data.gaitPhaseIndicator.f;
+      datalog_data[16].f = hWeWalkRight.data.angleThigh[0].f;
+      datalog_data[17].f = hWeWalkRight.data.angleThigh[1].f;
+      datalog_data[18].f = hWeWalkRight.data.angleThigh[2].f;
+      datalog_data[19].f = hWeWalkRight.data.angleShank[0].f;
+      datalog_data[20].f = hWeWalkRight.data.angleShank[1].f;
+      datalog_data[21].f = hWeWalkRight.data.angleShank[2].f;
+      datalog_data[22].f = hWeWalkRight.data.forceSensorToe.f;
+      datalog_data[23].f = hWeWalkRight.data.forceSensorHeel.f;
       hWeWalk.serialPC->ifNewDatalogPiece2Send = 1;
       wewalk_main_task_datalog_trigger = 0;
     }

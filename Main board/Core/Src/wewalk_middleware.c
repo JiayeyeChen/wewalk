@@ -1,7 +1,7 @@
 #include "wewalk_middleware.h"
 
 volatile uint8_t motor_communication_stage = 0;
-union FloatUInt8 datalog_data[16];
+union FloatUInt8 datalog_data[24];
 
 void WEWALKMIDDLEWARE_MotorControlManager(WeWalkHandle* hwewalk, LKTECH_MG_Handle* hmotor_left, LKTECH_MG_Handle* hmotor_right)
 {
@@ -45,7 +45,8 @@ void WEWALKMIDDLEWARE_MotorControlManager(WeWalkHandle* hwewalk, LKTECH_MG_Handl
 
 void Datalog_SendLabel(void)
 {
-	SERIALPROTOCOLECHO_SendDataSlotLabel(&hSerialPC, "16", "accThighX", "accThighY", "accThighZ", "gyroThighX", "gyroThighY", "gyroThighZ", \
+	SERIALPROTOCOLECHO_SendDataSlotLabel(&hSerialPC, "24", "accThighX", "accThighY", "accThighZ", "gyroThighX", "gyroThighY", "gyroThighZ", \
                                        "accShankX", "accShankY", "accShankZ", "gyroShankX", "gyroShankY", "gyroShankZ", \
-                                       "MotorPos", "MotorVel", "MotorTorque", "GaitPhaseIndicator");
+                                       "MotorPos", "MotorVel", "MotorTorque", "GaitPhaseIndicator", \
+                                        "ThighAngleX", "ThighAngleY", "ThighAngleZ", "ShankAngleX", "ShankAngleY", "ShankAngleZ", "ForceToe", "ForceHeel");
 }

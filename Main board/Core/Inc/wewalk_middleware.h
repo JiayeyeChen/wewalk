@@ -10,6 +10,6 @@ void WEWALKMIDDLEWARE_MotorControlManager(WeWalkHandle* hwewalk, LKTECH_MG_Handl
 
 void Datalog_SendLabel(void);
 
-extern union FloatUInt8 datalog_data[16];
+extern union FloatUInt8 datalog_data[24];
 
 #endif
