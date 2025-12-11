@@ -424,6 +424,7 @@ void WEWALK_ImpedanceControl(WeWalkHandle* hwewalk)
   hwewalk->right->motorCommand.cmd.f = hwewalk->right->setting.impedanceControlSpringCoefficient.f * hwewalk->right->data.motorPos.f + \
                                       hwewalk->right->setting.impedanceControlDampingCoefficient.f * hwewalk->right->data.motorVel.f;
 }
+
 void WEWALK_SineSwingControl(WeWalkUnilateralHandle* hwewalk)
 {
   hwewalk->motorCommand.controlMode = WEWALK_UNILATERAL_MOTOR_TASK_VELOCITY_CONTROL;
@@ -431,10 +432,12 @@ void WEWALK_SineSwingControl(WeWalkUnilateralHandle* hwewalk)
   hwewalk->motorCommand.cmd.f = hwewalk->setting.sineSwingControlMagnitude.f * sinf((2.0f * pi / hwewalk->setting.sineSwingControlFrequency.f) * (time_now - hwewalk->hSineSwing.t0TimeSecond));
   
 }
+
 void WEWALK_SineSwingInit(WeWalkUnilateralHandle* hwewalk)
 {
   hwewalk->hSineSwing.t0TimeSecond = ((float)HAL_GetTick()) / 1000.0f;
 }
+
 void WEWALK_FullAssistance_1(WeWalkHandle* hwewalk)
 {
   if (hwewalk->right->data.ifSwingPhase.b32)
