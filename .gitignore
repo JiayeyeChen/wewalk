@@ -56,3 +56,5 @@ dkms.conf
 
 build/
 MDK-ARM/
+GUI-debug-board/TouchGFX/config/
+
