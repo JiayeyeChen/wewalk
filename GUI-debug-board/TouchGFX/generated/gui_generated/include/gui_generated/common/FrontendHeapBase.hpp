@@ -27,6 +27,14 @@
 #include <gui/screen_settings_screen/Screen_SettingsPresenter.hpp>
 #include <gui/screen_research_screen/Screen_ResearchView.hpp>
 #include <gui/screen_research_screen/Screen_ResearchPresenter.hpp>
+#include <gui/screen_wewalkliveplot_gyroscope_screen/SCREEN_WeWalkLivePlot_GyroscopeView.hpp>
+#include <gui/screen_wewalkliveplot_gyroscope_screen/SCREEN_WeWalkLivePlot_GyroscopePresenter.hpp>
+#include <gui/screen_wewalkliveplot_angle_screen/SCREEN_WeWalkLivePlot_AngleView.hpp>
+#include <gui/screen_wewalkliveplot_angle_screen/SCREEN_WeWalkLivePlot_AnglePresenter.hpp>
+#include <gui/screen_wewalkliveplot_motor_screen/SCREEN_WeWalkLivePlot_MotorView.hpp>
+#include <gui/screen_wewalkliveplot_motor_screen/SCREEN_WeWalkLivePlot_MotorPresenter.hpp>
+#include <gui/screen_wewalkliveplot_accelerometer_screen/SCREEN_WeWalkLivePlot_AccelerometerView.hpp>
+#include <gui/screen_wewalkliveplot_accelerometer_screen/SCREEN_WeWalkLivePlot_AccelerometerPresenter.hpp>
 
 
 /**
@@ -55,7 +63,11 @@ public:
             touchgfx::meta::TypeList< Screen_WeWalkManualControlView,
             touchgfx::meta::TypeList< Screen_SettingsView,
             touchgfx::meta::TypeList< Screen_ResearchView,
-            touchgfx::meta::Nil > > > > >
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_GyroscopeView,
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_AngleView,
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_MotorView,
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_AccelerometerView,
+            touchgfx::meta::Nil > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -73,7 +85,11 @@ public:
             touchgfx::meta::TypeList< Screen_WeWalkManualControlPresenter,
             touchgfx::meta::TypeList< Screen_SettingsPresenter,
             touchgfx::meta::TypeList< Screen_ResearchPresenter,
-            touchgfx::meta::Nil > > > > >
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_GyroscopePresenter,
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_AnglePresenter,
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_MotorPresenter,
+            touchgfx::meta::TypeList< SCREEN_WeWalkLivePlot_AccelerometerPresenter,
+            touchgfx::meta::Nil > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

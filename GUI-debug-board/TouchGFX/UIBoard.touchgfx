@@ -260,11 +260,11 @@
       },
       {
         "Name": "SCREEN_WeWalkLivePlot",
-        "CanvasBufferSize": 12000,
         "Components": [
           {
             "Type": "Box",
             "Name": "box1",
+            "X": 1,
             "Width": 800,
             "Height": 480,
             "Color": {
@@ -272,1331 +272,6 @@
               "Green": 255,
               "Blue": 255
             }
-          },
-          {
-            "Type": "SwipeContainer",
-            "Name": "swipeContainer1",
-            "Width": 800,
-            "Height": 480,
-            "SwipeCutoff": 50,
-            "ShowPageIndicator": true,
-            "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
-            "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
-            "EndSwipeElasticWidth": 50,
-            "SelectedPage": "swipeContainer1Page6",
-            "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
-            "Components": [
-              {
-                "Type": "Container",
-                "Name": "swipeContainer1Page1",
-                "Width": 800,
-                "Height": 480,
-                "Components": [
-                  {
-                    "Type": "Container",
-                    "Name": "container_AccLower",
-                    "X": 22,
-                    "Y": 110,
-                    "Width": 350,
-                    "Height": 350,
-                    "Components": [
-                      {
-                        "Type": "BoxWithBorder",
-                        "Name": "boxWithBorder1",
-                        "Y": 1,
-                        "Width": 350,
-                        "Height": 349,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "BorderSize": 5
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_z_lower",
-                        "Y": 1,
-                        "Width": 350,
-                        "Height": 349,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 13.0,
-                        "MinY": -13.0,
-                        "Precision": "0.0001",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 4,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 10,
-                              "Green": 22,
-                              "Blue": 247
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_y_lower",
-                        "Y": 1,
-                        "Width": 350,
-                        "Height": 349,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 13.0,
-                        "MinY": -13.0,
-                        "Precision": "0.0001",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 4,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 13,
-                              "Green": 168,
-                              "Blue": 10
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_x_lower",
-                        "Y": 1,
-                        "Width": 350,
-                        "Height": 349,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 13.0,
-                        "MinY": -13.0,
-                        "Precision": "0.0001",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 4,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 207,
-                              "Blue": 7
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "container_AccUpper",
-                    "X": 428,
-                    "Y": 110,
-                    "Width": 350,
-                    "Height": 350,
-                    "Components": [
-                      {
-                        "Type": "BoxWithBorder",
-                        "Name": "boxWithBorder2",
-                        "Width": 350,
-                        "Height": 350,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "BorderSize": 5
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_z_upper",
-                        "Width": 350,
-                        "Height": 350,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 13.0,
-                        "MinY": -13.0,
-                        "Precision": "0.0001",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 4,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 37,
-                              "Green": 53,
-                              "Blue": 204
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_y_upper",
-                        "Y": 1,
-                        "Width": 350,
-                        "Height": 349,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 13.0,
-                        "MinY": -13.0,
-                        "Precision": "0.0001",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 4,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 12,
-                              "Green": 168,
-                              "Blue": 14
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_x_upper",
-                        "Width": 350,
-                        "Height": 350,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 13.0,
-                        "MinY": -13.0,
-                        "Precision": "0.0001",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 4,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 252
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea1",
-                    "X": 156,
-                    "Y": 92,
-                    "Width": 82,
-                    "Height": 18,
-                    "TextId": "__SingleUse_T04I",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea1_1",
-                    "X": 562,
-                    "Y": 93,
-                    "Width": 83,
-                    "Height": 18,
-                    "TextId": "__SingleUse_UFH6",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "container3",
-                    "X": 268,
-                    "Y": 20,
-                    "Width": 238,
-                    "Height": 35,
-                    "Components": [
-                      {
-                        "Type": "Line",
-                        "Name": "line1",
-                        "Y": 9,
-                        "Width": 64,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 255
-                        },
-                        "StartY": 5.0,
-                        "EndX": 50.0,
-                        "EndY": 5.0,
-                        "LineWidth": 5.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "line1_1",
-                        "X": 80,
-                        "Y": 9,
-                        "Width": 64,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 6,
-                          "Green": 176
-                        },
-                        "StartY": 5.0,
-                        "EndX": 50.0,
-                        "EndY": 5.0,
-                        "LineWidth": 5.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "line1_2",
-                        "X": 156,
-                        "Y": 9,
-                        "Width": 64,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 32,
-                          "Green": 98,
-                          "Blue": 250
-                        },
-                        "StartY": 5.0,
-                        "EndX": 50.0,
-                        "EndY": 5.0,
-                        "LineWidth": 5.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "textArea3",
-                        "X": 58,
-                        "Width": 13,
-                        "Height": 24,
-                        "TextId": "__SingleUse_3STK",
-                        "TextRotation": "0",
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "textArea3_1",
-                        "X": 138,
-                        "Y": -1,
-                        "Width": 13,
-                        "Height": 24,
-                        "TextId": "__SingleUse_0A38",
-                        "TextRotation": "0",
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "textArea3_1_1",
-                        "X": 217,
-                        "Width": 12,
-                        "Height": 24,
-                        "TextId": "__SingleUse_GIJJ",
-                        "TextRotation": "0",
-                        "AutoSize": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "Type": "Container",
-                "Name": "swipeContainer1Page3",
-                "Width": 800,
-                "Height": 480,
-                "Components": [
-                  {
-                    "Type": "Container",
-                    "Name": "container2",
-                    "X": 60,
-                    "Y": 84,
-                    "Width": 679,
-                    "Height": 367,
-                    "Components": [
-                      {
-                        "Type": "BoxWithBorder",
-                        "Name": "boxWithBorder4",
-                        "Y": -1,
-                        "Width": 679,
-                        "Height": 368,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "BorderSize": 5
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_longitude_difference_z",
-                        "Width": 679,
-                        "Height": 367,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 10.0,
-                        "MinY": -10.0,
-                        "Precision": "0.01",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 5,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 37,
-                              "Green": 53,
-                              "Blue": 204
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_longitude_difference_y",
-                        "Width": 679,
-                        "Height": 367,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 10.0,
-                        "MinY": -10.0,
-                        "Precision": "0.01",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 5,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 12,
-                              "Green": 168,
-                              "Blue": 14
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_acc_longitude_difference_x",
-                        "Y": -1,
-                        "Width": 679,
-                        "Height": 368,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 10.0,
-                        "MinY": -10.0,
-                        "Precision": "0.01",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 5,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 252
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 6.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea2",
-                    "X": 284,
-                    "Y": 60,
-                    "Width": 180,
-                    "Height": 18,
-                    "TextId": "__SingleUse_3025",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "container3_1",
-                    "X": 259,
-                    "Y": 26,
-                    "Width": 238,
-                    "Height": 35,
-                    "Components": [
-                      {
-                        "Type": "Line",
-                        "Name": "line1_3",
-                        "Y": 9,
-                        "Width": 64,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 255
-                        },
-                        "StartY": 5.0,
-                        "EndX": 50.0,
-                        "EndY": 5.0,
-                        "LineWidth": 5.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "line1_1_1",
-                        "X": 80,
-                        "Y": 9,
-                        "Width": 64,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 6,
-                          "Green": 176
-                        },
-                        "StartY": 5.0,
-                        "EndX": 50.0,
-                        "EndY": 5.0,
-                        "LineWidth": 5.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "line1_2_1",
-                        "X": 156,
-                        "Y": 9,
-                        "Width": 64,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 32,
-                          "Green": 98,
-                          "Blue": 250
-                        },
-                        "StartY": 5.0,
-                        "EndX": 50.0,
-                        "EndY": 5.0,
-                        "LineWidth": 5.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "textArea3_2",
-                        "X": 58,
-                        "Width": 13,
-                        "Height": 24,
-                        "TextId": "__SingleUse_09Q5",
-                        "TextRotation": "0",
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "textArea3_1_2",
-                        "X": 138,
-                        "Y": -1,
-                        "Width": 13,
-                        "Height": 24,
-                        "TextId": "__SingleUse_ZFL1",
-                        "TextRotation": "0",
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "textArea3_1_1_1",
-                        "X": 217,
-                        "Width": 12,
-                        "Height": 24,
-                        "TextId": "__SingleUse_YYF4",
-                        "TextRotation": "0",
-                        "AutoSize": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "Type": "Container",
-                "Name": "swipeContainer1Page2",
-                "Width": 800,
-                "Height": 480,
-                "Components": [
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea1_1_1",
-                    "X": 374,
-                    "Y": 60,
-                    "Width": 54,
-                    "Height": 18,
-                    "TextId": "__SingleUse_QV9C",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "container1",
-                    "X": 78,
-                    "Y": 92,
-                    "Width": 645,
-                    "Height": 368,
-                    "Components": [
-                      {
-                        "Type": "BoxWithBorder",
-                        "Name": "boxWithBorder3",
-                        "Width": 645,
-                        "Height": 368,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "BorderSize": 5
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "graph_gyro_rate",
-                        "Width": 645,
-                        "Height": 368,
-                        "DataSeed": 1605232134,
-                        "NumberOfValues": 20,
-                        "MaxY": 300.0,
-                        "MinY": -300.0,
-                        "Precision": "0.01",
-                        "LastIndex": 19,
-                        "XAxisScale": 1.0,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 5,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 37,
-                              "Green": 53,
-                              "Blue": 204
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 7.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Interval": 79.0,
-                          "LineWidth": 1
-                        },
-                        "XAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 10.0,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "time",
-                          "TextRotation": "0",
-                          "Position": "Bottom"
-                        },
-                        "YAxisLabel": {
-                          "Type": "GraphLabel",
-                          "Interval": 0.6,
-                          "DecimalSeparator": "Point",
-                          "TextColor": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "TextId": "voltage",
-                          "TextRotation": "0",
-                          "Position": "Left"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "Type": "Container",
-                "Name": "swipeContainer1Page4",
-                "Width": 800,
-                "Height": 480,
-                "Components": [
-                  {
-                    "Type": "Container",
-                    "Name": "container4",
-                    "X": 153,
-                    "Y": 111,
-                    "Width": 500,
-                    "Height": 328,
-                    "Components": [
-                      {
-                        "Type": "BoxWithBorder",
-                        "Name": "boxWithBorder5",
-                        "Y": -1,
-                        "Width": 500,
-                        "Height": 329,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "BorderSize": 5
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "dynamicGraph_GlobalAngularAcceleration",
-                        "Y": -1,
-                        "Width": 500,
-                        "Height": 329,
-                        "DataSeed": 159636983,
-                        "NumberOfValues": 50,
-                        "MaxY": 30.0,
-                        "MinY": -30.0,
-                        "Precision": "1",
-                        "LastIndex": 49,
-                        "XAxisScale": 1.0,
-                        "InsertRandomValues": true,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 5,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 247,
-                              "Green": 10,
-                              "Blue": 46
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea4",
-                    "X": 247,
-                    "Y": 78,
-                    "Width": 313,
-                    "Height": 24,
-                    "TextId": "__SingleUse_IZ9I",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  }
-                ]
-              },
-              {
-                "Type": "Container",
-                "Name": "swipeContainer1Page5",
-                "Width": 800,
-                "Height": 480,
-                "Components": [
-                  {
-                    "Type": "Container",
-                    "Name": "container5",
-                    "X": 79,
-                    "Y": 102,
-                    "Width": 641,
-                    "Height": 337,
-                    "Components": [
-                      {
-                        "Type": "BoxWithBorder",
-                        "Name": "boxWithBorder6",
-                        "X": -1,
-                        "Y": -1,
-                        "Width": 642,
-                        "Height": 338,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "BorderSize": 5
-                      },
-                      {
-                        "Type": "DynamicGraph",
-                        "Name": "dynamicGraph_MotorTorque",
-                        "Width": 642,
-                        "Height": 337,
-                        "DataSeed": 58742459,
-                        "NumberOfValues": 30,
-                        "MaxY": 70.0,
-                        "MinY": -70.0,
-                        "Precision": "0.01",
-                        "LastIndex": 29,
-                        "XAxisScale": 1.0,
-                        "InsertRandomValues": true,
-                        "GraphType": "GraphScroll",
-                        "GraphDrawers": [
-                          {
-                            "Type": "LineDrawer",
-                            "LineWidth": 2,
-                            "FileNameImage": "",
-                            "Color": {
-                              "Red": 20,
-                              "Green": 151,
-                              "Blue": 197
-                            }
-                          }
-                        ],
-                        "XAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Color": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "Interval": 10.0,
-                          "LineWidth": 1
-                        },
-                        "YAxisGrid": {
-                          "Type": "GraphGrid",
-                          "Color": {
-                            "Red": 20,
-                            "Green": 151,
-                            "Blue": 197
-                          },
-                          "Interval": 14.0,
-                          "LineWidth": 1
-                        }
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "line2",
-                        "Y": 168,
-                        "Width": 641,
-                        "Height": 50,
-                        "Color": {
-                          "Red": 15,
-                          "Green": 14,
-                          "Blue": 14
-                        },
-                        "EndX": 640.0,
-                        "LineWidth": 10.0,
-                        "LineEndingStyle": "Round"
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea5",
-                    "X": 335,
-                    "Y": 57,
-                    "Width": 131,
-                    "Height": 24,
-                    "TextId": "__SingleUse_AOGM",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea_MotorTorque",
-                    "X": 13,
-                    "Y": 65,
-                    "Width": 304,
-                    "Height": 28,
-                    "TextId": "__SingleUse_APE7",
-                    "TextRotation": "0",
-                    "Wildcard1": {
-                      "TextId": "__SingleUse_9C94",
-                      "UseBuffer": true,
-                      "BufferSize": 20
-                    }
-                  }
-                ]
-              },
-              {
-                "Type": "Container",
-                "Name": "swipeContainer1Page6",
-                "Width": 800,
-                "Height": 480,
-                "Components": [
-                  {
-                    "Type": "BoxWithBorder",
-                    "Name": "boxWithBorder7",
-                    "X": 72,
-                    "Y": 111,
-                    "Width": 667,
-                    "Height": 335,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "BorderSize": 5
-                  },
-                  {
-                    "Type": "DynamicGraph",
-                    "Name": "dynamicGraph_GaitPhaseIndicator",
-                    "X": 72,
-                    "Y": 111,
-                    "Width": 661,
-                    "Height": 328,
-                    "DataSeed": -866010921,
-                    "NumberOfValues": 100,
-                    "MaxY": 1.5,
-                    "MinY": -1.5,
-                    "Precision": "0.001",
-                    "LastIndex": 99,
-                    "XAxisScale": 1.0,
-                    "GraphType": "GraphScroll",
-                    "GraphDrawers": [
-                      {
-                        "Type": "LineDrawer",
-                        "LineWidth": 2,
-                        "FileNameImage": "",
-                        "Color": {
-                          "Red": 255
-                        }
-                      }
-                    ],
-                    "XAxisGrid": {
-                      "Type": "GraphGrid",
-                      "Color": {
-                        "Red": 20,
-                        "Green": 151,
-                        "Blue": 197
-                      },
-                      "Interval": 10.0,
-                      "LineWidth": 1
-                    },
-                    "YAxisGrid": {
-                      "Type": "GraphGrid",
-                      "Color": {
-                        "Red": 20,
-                        "Green": 151,
-                        "Blue": 197
-                      },
-                      "Interval": 10.0,
-                      "LineWidth": 1
-                    }
-                  },
-                  {
-                    "Type": "Line",
-                    "Name": "line2_1",
-                    "X": 72,
-                    "Y": 285,
-                    "Width": 667,
-                    "Height": 50,
-                    "Color": {
-                      "Red": 15,
-                      "Green": 14,
-                      "Blue": 14
-                    },
-                    "EndX": 660.0,
-                    "LineWidth": 10.0,
-                    "LineEndingStyle": "Round"
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea6",
-                    "X": 288,
-                    "Y": 72,
-                    "Width": 230,
-                    "Height": 24,
-                    "TextId": "__SingleUse_SLP5",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea_GaitPhaseIndicator",
-                    "X": 22,
-                    "Y": 77,
-                    "Width": 237,
-                    "Height": 24,
-                    "TextId": "__SingleUse_AD1J",
-                    "TextRotation": "0",
-                    "Wildcard1": {
-                      "TextId": "__SingleUse_S176",
-                      "UseBuffer": true,
-                      "BufferSize": 20
-                    }
-                  },
-                  {
-                    "Type": "BoxWithBorder",
-                    "Name": "boxWithBorder_SwingPhase",
-                    "X": 206,
-                    "Y": 29,
-                    "Width": 158,
-                    "Height": 36,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "BorderSize": 5
-                  },
-                  {
-                    "Type": "BoxWithBorder",
-                    "Name": "boxWithBorder_StancePhase",
-                    "X": 387,
-                    "Y": 29,
-                    "Width": 158,
-                    "Height": 36,
-                    "Color": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "BorderSize": 5
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea7",
-                    "X": 247,
-                    "Y": 35,
-                    "Width": 69,
-                    "Height": 24,
-                    "TextId": "__SingleUse_A5K2",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  },
-                  {
-                    "Type": "TextArea",
-                    "Name": "textArea7_1",
-                    "X": 428,
-                    "Y": 35,
-                    "Width": 75,
-                    "Height": 24,
-                    "TextId": "__SingleUse_HTEU",
-                    "TextRotation": "0",
-                    "AutoSize": true
-                  }
-                ]
-              }
-            ]
           },
           {
             "Type": "ButtonWithIcon",
@@ -1613,6 +288,215 @@
             "IconHeight": 50,
             "IconWidth": 50,
             "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_outline_disabled.json"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton_AccelerometerLivePlot",
+            "Width": 214,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "TextId": "__SingleUse_7YLD",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 214,
+                "Height": 44,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton_GyroscopeLivePlot",
+            "X": 1,
+            "Y": 60,
+            "Width": 214,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "TextId": "__SingleUse_N0BE",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 214,
+                "Height": 44,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton_MotorLivePlot",
+            "X": 1,
+            "Y": 119,
+            "Width": 214,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "TextId": "__SingleUse_CYIE",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 214,
+                "Height": 44,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton_ForcePressureLivePlot",
+            "Y": 177,
+            "Width": 214,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "TextId": "__SingleUse_XBMI",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 214,
+                "Height": 44,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -4796,6 +3680,2141 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "function_GeneralTrigger2_ButtonClicked"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SCREEN_WeWalkLivePlot_Gyroscope",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_ReturnToTheLast",
+            "X": 740,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_outline_disabled.json"
+          },
+          {
+            "Type": "Container",
+            "Name": "container_GyroThigh",
+            "X": 420,
+            "Y": 77,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1_1_1",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_gyro_z_thigh",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 22,
+                      "Blue": 247
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_gyro_y_thigh",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 13,
+                      "Green": 168,
+                      "Blue": 10
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_gyro_x_thigh",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_GyroShank",
+            "X": 39,
+            "Y": 78,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1_1_1_1",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_gyro_z_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 22,
+                      "Blue": 247
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_gyro_y_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 13,
+                      "Green": 168,
+                      "Blue": 10
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_gyro_x_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container3_1",
+            "X": 269,
+            "Y": 30,
+            "Width": 263,
+            "Height": 39,
+            "Components": [
+              {
+                "Type": "Line",
+                "Name": "line1_3",
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 255
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "Line",
+                "Name": "line1_1_1",
+                "X": 80,
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 6,
+                  "Green": 176
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "Line",
+                "Name": "line1_2_1",
+                "X": 156,
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 32,
+                  "Green": 98,
+                  "Blue": 250
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "X": 58,
+                "Width": 13,
+                "Height": 24,
+                "TextId": "__SingleUse_GTYR",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1",
+                "X": 138,
+                "Width": 13,
+                "Height": 24,
+                "TextId": "__SingleUse_2U9Y",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1_1",
+                "X": 220,
+                "Width": 12,
+                "Height": 24,
+                "TextId": "__SingleUse_BTUQ",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 564,
+            "Y": 52,
+            "Width": 63,
+            "Height": 24,
+            "TextId": "__SingleUse_9MEV",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2_1",
+            "X": 191,
+            "Y": 53,
+            "Width": 68,
+            "Height": 24,
+            "TextId": "__SingleUse_B6B9",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_ReturnToTheLast"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SCREEN_WeWalkLivePlot_Angle",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_ReturnToTheLast",
+            "X": 740,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_outline_disabled.json"
+          },
+          {
+            "Type": "Container",
+            "Name": "container_AngleThigh",
+            "X": 413,
+            "Y": 77,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder2",
+                "Width": 350,
+                "Height": 350,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle_z_thigh",
+                "Width": 350,
+                "Height": 350,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 37,
+                      "Green": 53,
+                      "Blue": 204
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle_y_thigh",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 12,
+                      "Green": 168,
+                      "Blue": 14
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle_x_thigh",
+                "Width": 350,
+                "Height": 350,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 252
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_AngleShank",
+            "X": 50,
+            "Y": 76,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle_z_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 22,
+                      "Blue": 247
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle_y_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 13,
+                      "Green": 168,
+                      "Blue": 10
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle_x_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container3",
+            "X": 294,
+            "Y": 30,
+            "Width": 238,
+            "Height": 35,
+            "Components": [
+              {
+                "Type": "Line",
+                "Name": "line1",
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 255
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "Line",
+                "Name": "line1_1",
+                "X": 80,
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 6,
+                  "Green": 176
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "Line",
+                "Name": "line1_2",
+                "X": 156,
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 32,
+                  "Green": 98,
+                  "Blue": 250
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2",
+                "X": 58,
+                "Width": 13,
+                "Height": 24,
+                "TextId": "__SingleUse_9EKK",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2_1",
+                "X": 138,
+                "Width": 13,
+                "Height": 24,
+                "TextId": "__SingleUse_Q00J",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2_1_1",
+                "X": 220,
+                "Width": 12,
+                "Height": 24,
+                "TextId": "__SingleUse_FYH7",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 547,
+            "Y": 51,
+            "Width": 97,
+            "Height": 18,
+            "TextId": "__SingleUse_DDTD",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 170,
+            "Y": 53,
+            "Width": 104,
+            "Height": 18,
+            "TextId": "__SingleUse_XX5P",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_ReturnToTheLast"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SCREEN_WeWalkLivePlot_Motor",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_ReturnToTheLast",
+            "X": 740,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_outline_disabled.json"
+          },
+          {
+            "Type": "Container",
+            "Name": "container_Angle",
+            "X": 26,
+            "Y": 25,
+            "Width": 251,
+            "Height": 225,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1",
+                "Y": 1,
+                "Width": 251,
+                "Height": 224,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_angle",
+                "Width": 251,
+                "Height": 224,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_Velocity",
+            "X": 329,
+            "Y": 24,
+            "Width": 251,
+            "Height": 225,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1_1",
+                "Y": 1,
+                "Width": 251,
+                "Height": 224,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_velocity",
+                "Y": 1,
+                "Width": 251,
+                "Height": 224,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_Current",
+            "X": 98,
+            "Y": 304,
+            "Width": 202,
+            "Height": 176,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1_1_1",
+                "Y": 1,
+                "Width": 202,
+                "Height": 175,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_current",
+                "Y": 1,
+                "Width": 202,
+                "Height": 175,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_Torque",
+            "X": 400,
+            "Y": 305,
+            "Width": 202,
+            "Height": 176,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1_1_1_1",
+                "Y": 1,
+                "Width": 202,
+                "Height": 175,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_torque",
+                "Y": 1,
+                "Width": 202,
+                "Height": 175,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 421,
+            "Y": 7,
+            "Width": 67,
+            "Height": 18,
+            "TextId": "__SingleUse_VK0S",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 127,
+            "Y": 7,
+            "Width": 48,
+            "Height": 18,
+            "TextId": "__SingleUse_SXXV",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 175,
+            "Y": 286,
+            "Width": 64,
+            "Height": 18,
+            "TextId": "__SingleUse_YVIR",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2_1",
+            "X": 469,
+            "Y": 286,
+            "Width": 58,
+            "Height": 18,
+            "TextId": "__SingleUse_PRUZ",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_ReturnToTheLast"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SCREEN_WeWalkLivePlot_Accelerometer",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_ReturnToTheLast",
+            "X": 740,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_outline_disabled.json"
+          },
+          {
+            "Type": "Container",
+            "Name": "container_AccThigh",
+            "X": 413,
+            "Y": 77,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder2",
+                "Width": 350,
+                "Height": 350,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_acc_z_thigh",
+                "Width": 350,
+                "Height": 350,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 37,
+                      "Green": 53,
+                      "Blue": 204
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_acc_y_thigh",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 12,
+                      "Green": 168,
+                      "Blue": 14
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_acc_x_thigh",
+                "Width": 350,
+                "Height": 350,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 252
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_AccShank",
+            "X": 50,
+            "Y": 76,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_acc_z_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 22,
+                      "Blue": 247
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_acc_y_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 13,
+                      "Green": 168,
+                      "Blue": 10
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_acc_x_shank",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 13.0,
+                "MinY": -13.0,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container3",
+            "X": 294,
+            "Y": 30,
+            "Width": 238,
+            "Height": 35,
+            "Components": [
+              {
+                "Type": "Line",
+                "Name": "line1",
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 255
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "Line",
+                "Name": "line1_1",
+                "X": 80,
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 6,
+                  "Green": 176
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "Line",
+                "Name": "line1_2",
+                "X": 156,
+                "Y": 9,
+                "Width": 64,
+                "Height": 20,
+                "Color": {
+                  "Red": 32,
+                  "Green": 98,
+                  "Blue": 250
+                },
+                "StartY": 5.0,
+                "EndX": 50.0,
+                "EndY": 5.0,
+                "LineWidth": 5.0,
+                "LineEndingStyle": "Round"
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 547,
+            "Y": 51,
+            "Width": 79,
+            "Height": 18,
+            "TextId": "__SingleUse_UFH6",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 170,
+            "Y": 53,
+            "Width": 86,
+            "Height": 18,
+            "TextId": "__SingleUse_T04I",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_ReturnToTheLast"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot"
             }
           }
         ]

@@ -21,6 +21,14 @@
 #include <gui/screen_settings_screen/Screen_SettingsPresenter.hpp>
 #include <gui/screen_research_screen/Screen_ResearchView.hpp>
 #include <gui/screen_research_screen/Screen_ResearchPresenter.hpp>
+#include <gui/screen_wewalkliveplot_gyroscope_screen/SCREEN_WeWalkLivePlot_GyroscopeView.hpp>
+#include <gui/screen_wewalkliveplot_gyroscope_screen/SCREEN_WeWalkLivePlot_GyroscopePresenter.hpp>
+#include <gui/screen_wewalkliveplot_angle_screen/SCREEN_WeWalkLivePlot_AngleView.hpp>
+#include <gui/screen_wewalkliveplot_angle_screen/SCREEN_WeWalkLivePlot_AnglePresenter.hpp>
+#include <gui/screen_wewalkliveplot_motor_screen/SCREEN_WeWalkLivePlot_MotorView.hpp>
+#include <gui/screen_wewalkliveplot_motor_screen/SCREEN_WeWalkLivePlot_MotorPresenter.hpp>
+#include <gui/screen_wewalkliveplot_accelerometer_screen/SCREEN_WeWalkLivePlot_AccelerometerView.hpp>
+#include <gui/screen_wewalkliveplot_accelerometer_screen/SCREEN_WeWalkLivePlot_AccelerometerPresenter.hpp>
 
 using namespace touchgfx;
 

@@ -45,6 +45,18 @@
     <ClCompile Include="..\..\gui\src\screen_wewalk_screen\SCREEN_WeWalkPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_wewalk_screen\SCREEN_WeWalkView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalk_screen\SCREEN_WeWalkViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AnglePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -221,6 +233,18 @@
     <ClInclude Include="..\..\gui\include\gui\screen_wewalk_screen\SCREEN_WeWalkPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen_wewalk_screen\SCREEN_WeWalkView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalk_screen\SCREEN_WeWalkViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AnglePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

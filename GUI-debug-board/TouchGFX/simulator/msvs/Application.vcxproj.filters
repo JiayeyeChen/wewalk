@@ -274,6 +274,54 @@
     <Filter Include="Header Files\generated\gui_generated\screen_wewalk_screen">
       <UniqueIdentifier>C3E154CF-A0CB-0414-786C-5C0A3751E7EF</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\screen_wewalkliveplot_angle_screen">
+      <UniqueIdentifier>34FCD49B-401A-E0DE-54F6-EB226879A5C5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen_wewalkliveplot_angle_screen">
+      <UniqueIdentifier>2D37A566-118F-311F-9425-AC24F68C957A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screen_wewalkliveplot_gyroscope_screen">
+      <UniqueIdentifier>4229895E-FEA1-B9AD-1A73-59CDB35A63FD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen_wewalkliveplot_accelerometer_screen">
+      <UniqueIdentifier>B4622739-BAA2-DA25-083E-C24ACC356F1E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screen_wewalkliveplot_accelerometer_screen">
+      <UniqueIdentifier>10E8CDC5-17A3-0A39-0E0E-728900208E76</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen_wewalkliveplot_gyroscope_screen">
+      <UniqueIdentifier>FF94F7A7-A355-CEF2-8881-208275724071</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screen_wewalkliveplot_motor_screen">
+      <UniqueIdentifier>30A82ED9-5599-037B-B20D-1DB647DEB855</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen_wewalkliveplot_motor_screen">
+      <UniqueIdentifier>C2380E6A-DF64-A890-B26B-25D7730C3182</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen_wewalkliveplot_angle_screen">
+      <UniqueIdentifier>92369E4A-E337-1DC7-C920-2EA56CE0D526</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_wewalkliveplot_motor_screen">
+      <UniqueIdentifier>E6B387B3-84EB-CF73-5C58-02D4AF1F009C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen_wewalkliveplot_motor_screen">
+      <UniqueIdentifier>A264ADA3-5A43-1911-5C8D-38CBD7C7F7CA</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_wewalkliveplot_gyroscope_screen">
+      <UniqueIdentifier>3E93F3EC-70A6-C429-A3AE-E2EAF7F91ABE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen_wewalkliveplot_gyroscope_screen">
+      <UniqueIdentifier>F924C196-F9F4-8F0A-2258-0DFEC2EC942D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_wewalkliveplot_accelerometer_screen">
+      <UniqueIdentifier>6E94C34E-4E14-017F-B4C3-40710329467A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_wewalkliveplot_angle_screen">
+      <UniqueIdentifier>28ED4272-D318-395E-0F47-99DC68ABC471</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen_wewalkliveplot_accelerometer_screen">
+      <UniqueIdentifier>D19030E2-A7D5-229A-CEDA-9B0BA6392F7D</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -377,6 +425,42 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalk_screen\SCREEN_WeWalkViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen_wewalk_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerPresenter.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_accelerometer_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerView.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_accelerometer_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_wewalkliveplot_accelerometer_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AnglePresenter.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_angle_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleView.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_angle_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_wewalkliveplot_angle_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopePresenter.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_gyroscope_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeView.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_gyroscope_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_wewalkliveplot_gyroscope_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorPresenter.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_motor_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorView.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_motor_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_wewalkliveplot_motor_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -897,6 +981,42 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalk_screen\SCREEN_WeWalkViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen_wewalk_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerPresenter.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_accelerometer_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerView.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_accelerometer_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_accelerometer_screen\SCREEN_WeWalkLivePlot_AccelerometerViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_wewalkliveplot_accelerometer_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AnglePresenter.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_angle_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleView.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_angle_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_angle_screen\SCREEN_WeWalkLivePlot_AngleViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_wewalkliveplot_angle_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopePresenter.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_gyroscope_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeView.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_gyroscope_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_gyroscope_screen\SCREEN_WeWalkLivePlot_GyroscopeViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_wewalkliveplot_gyroscope_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorPresenter.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_motor_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorView.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_motor_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_wewalkliveplot_motor_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

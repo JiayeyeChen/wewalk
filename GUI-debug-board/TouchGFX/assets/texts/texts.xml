@@ -16,6 +16,66 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_PRUZ" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Torque</Translation>
+      </Text>
+      <Text Id="__SingleUse_YVIR" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Current</Translation>
+      </Text>
+      <Text Id="__SingleUse_SXXV" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Angle</Translation>
+      </Text>
+      <Text Id="__SingleUse_VK0S" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Velocity</Translation>
+      </Text>
+      <Text Id="__SingleUse_FYH7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">z</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q00J" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">y</Translation>
+      </Text>
+      <Text Id="__SingleUse_9EKK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">x</Translation>
+      </Text>
+      <Text Id="__SingleUse_XX5P" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Angle shank</Translation>
+      </Text>
+      <Text Id="__SingleUse_DDTD" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Angle thigh</Translation>
+      </Text>
+      <Text Id="__SingleUse_B6B9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Shank</Translation>
+      </Text>
+      <Text Id="__SingleUse_9MEV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Thigh</Translation>
+      </Text>
+      <Text Id="__SingleUse_BTUQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">z</Translation>
+      </Text>
+      <Text Id="__SingleUse_2U9Y" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">y</Translation>
+      </Text>
+      <Text Id="__SingleUse_GTYR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">x</Translation>
+      </Text>
+      <Text Id="__SingleUse_T04I" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Acc shank</Translation>
+      </Text>
+      <Text Id="__SingleUse_UFH6" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Acc thigh</Translation>
+      </Text>
+      <Text Id="__SingleUse_XBMI" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Force pressure</Translation>
+      </Text>
+      <Text Id="__SingleUse_CYIE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Motors</Translation>
+      </Text>
+      <Text Id="__SingleUse_N0BE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Gyroscopes</Translation>
+      </Text>
+      <Text Id="__SingleUse_7YLD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Accelerometers</Translation>
+      </Text>
       <Text Id="__SingleUse_DG2P" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">General&#10;Trigger 2</Translation>
       </Text>
@@ -79,18 +139,6 @@
       <Text Id="__SingleUse_G6ZQ" Alignment="Left" TypographyId="Mid">
         <Translation Language="GB">Full Control 1</Translation>
       </Text>
-      <Text Id="__SingleUse_HTEU" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Stance</Translation>
-      </Text>
-      <Text Id="__SingleUse_A5K2" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Swing</Translation>
-      </Text>
-      <Text Id="__SingleUse_S176" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_AD1J" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
       <Text Id="__SingleUse_FF9V" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
@@ -109,9 +157,6 @@
       <Text Id="__SingleUse_HUY1" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Acc Field Method&#10;Target Pos X</Translation>
       </Text>
-      <Text Id="__SingleUse_SLP5" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Gait Phase Indicator</Translation>
-      </Text>
       <Text Id="__SingleUse_244V" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
@@ -123,15 +168,6 @@
       </Text>
       <Text Id="__SingleUse_I5VK" Alignment="Left" TypographyId="Mid">
         <Translation Language="GB">Sine Swing</Translation>
-      </Text>
-      <Text Id="__SingleUse_9C94" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_APE7" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt; Nm</Translation>
-      </Text>
-      <Text Id="__SingleUse_AOGM" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Torque/Nm</Translation>
       </Text>
       <Text Id="__SingleUse_4I5U" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;</Translation>
@@ -168,27 +204,6 @@
       </Text>
       <Text Id="__SingleUse_WPFO" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Right Leg</Translation>
-      </Text>
-      <Text Id="__SingleUse_IZ9I" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Global Angular Acceleration</Translation>
-      </Text>
-      <Text Id="__SingleUse_YYF4" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">z</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZFL1" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">y</Translation>
-      </Text>
-      <Text Id="__SingleUse_09Q5" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">x</Translation>
-      </Text>
-      <Text Id="__SingleUse_GIJJ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">z</Translation>
-      </Text>
-      <Text Id="__SingleUse_0A38" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">y</Translation>
-      </Text>
-      <Text Id="__SingleUse_3STK" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">x</Translation>
       </Text>
       <Text Id="__SingleUse_EKBZ" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;</Translation>
@@ -261,18 +276,6 @@
       </Text>
       <Text Id="__SingleUse_7S8J" Alignment="Center" TypographyId="Mid">
         <Translation Language="GB">Save Settings</Translation>
-      </Text>
-      <Text Id="__SingleUse_3025" Alignment="Left" TypographyId="Mid">
-        <Translation Language="GB">Acceleration gradient</Translation>
-      </Text>
-      <Text Id="__SingleUse_QV9C" Alignment="Left" TypographyId="Mid">
-        <Translation Language="GB">Gyro Z</Translation>
-      </Text>
-      <Text Id="__SingleUse_UFH6" Alignment="Left" TypographyId="Mid">
-        <Translation Language="GB">Acc upper</Translation>
-      </Text>
-      <Text Id="__SingleUse_T04I" Alignment="Left" TypographyId="Mid">
-        <Translation Language="GB">Acc lower</Translation>
       </Text>
       <Text Id="__SingleUse_H5XS" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Offline</Translation>
