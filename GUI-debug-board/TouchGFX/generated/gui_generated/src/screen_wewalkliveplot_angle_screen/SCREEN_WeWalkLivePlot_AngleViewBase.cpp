@@ -142,30 +142,27 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
 
     container_AngleThigh.add(graph_angle_x_thigh);
 
-    textArea_ThighAngleY.setXY(11, 49);
+    textArea_ThighAngleY.setPosition(11, 49, 303, 24);
     textArea_ThighAngleY.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_ThighAngleY.setLinespacing(0);
     Unicode::snprintf(textArea_ThighAngleYBuffer, TEXTAREA_THIGHANGLEY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_RY4L).getText());
     textArea_ThighAngleY.setWildcard(textArea_ThighAngleYBuffer);
-    textArea_ThighAngleY.resizeToCurrentText();
     textArea_ThighAngleY.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9MRU));
     container_AngleThigh.add(textArea_ThighAngleY);
 
-    textArea_ThighAngleX.setXY(11, 16);
+    textArea_ThighAngleX.setPosition(11, 16, 303, 24);
     textArea_ThighAngleX.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_ThighAngleX.setLinespacing(0);
     Unicode::snprintf(textArea_ThighAngleXBuffer, TEXTAREA_THIGHANGLEX_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_W486).getText());
     textArea_ThighAngleX.setWildcard(textArea_ThighAngleXBuffer);
-    textArea_ThighAngleX.resizeToCurrentText();
     textArea_ThighAngleX.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WK4K));
     container_AngleThigh.add(textArea_ThighAngleX);
 
-    textArea_ThighAngleZ.setXY(11, 84);
+    textArea_ThighAngleZ.setPosition(11, 84, 303, 24);
     textArea_ThighAngleZ.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_ThighAngleZ.setLinespacing(0);
     Unicode::snprintf(textArea_ThighAngleZBuffer, TEXTAREA_THIGHANGLEZ_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_OYLK).getText());
     textArea_ThighAngleZ.setWildcard(textArea_ThighAngleZBuffer);
-    textArea_ThighAngleZ.resizeToCurrentText();
     textArea_ThighAngleZ.setTypedText(touchgfx::TypedText(T___SINGLEUSE_D6TN));
     container_AngleThigh.add(textArea_ThighAngleZ);
 
@@ -286,30 +283,27 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
 
     container_AngleShank.add(graph_angle_x_shank);
 
-    textArea_ShankAngleX.setXY(7, 15);
+    textArea_ShankAngleX.setPosition(7, 15, 319, 24);
     textArea_ShankAngleX.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_ShankAngleX.setLinespacing(0);
     Unicode::snprintf(textArea_ShankAngleXBuffer, TEXTAREA_SHANKANGLEX_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_STZO).getText());
     textArea_ShankAngleX.setWildcard(textArea_ShankAngleXBuffer);
-    textArea_ShankAngleX.resizeToCurrentText();
     textArea_ShankAngleX.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3WAK));
     container_AngleShank.add(textArea_ShankAngleX);
 
-    textArea_ShankAngleY.setXY(7, 48);
+    textArea_ShankAngleY.setPosition(7, 48, 319, 24);
     textArea_ShankAngleY.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_ShankAngleY.setLinespacing(0);
     Unicode::snprintf(textArea_ShankAngleYBuffer, TEXTAREA_SHANKANGLEY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FUUF).getText());
     textArea_ShankAngleY.setWildcard(textArea_ShankAngleYBuffer);
-    textArea_ShankAngleY.resizeToCurrentText();
     textArea_ShankAngleY.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J70M));
     container_AngleShank.add(textArea_ShankAngleY);
 
-    textArea_ShankAngleZ.setXY(7, 83);
+    textArea_ShankAngleZ.setPosition(7, 83, 319, 24);
     textArea_ShankAngleZ.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_ShankAngleZ.setLinespacing(0);
     Unicode::snprintf(textArea_ShankAngleZBuffer, TEXTAREA_SHANKANGLEZ_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_J5XE).getText());
     textArea_ShankAngleZ.setWildcard(textArea_ShankAngleZBuffer);
-    textArea_ShankAngleZ.resizeToCurrentText();
     textArea_ShankAngleZ.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CGCE));
     container_AngleShank.add(textArea_ShankAngleZ);
 
