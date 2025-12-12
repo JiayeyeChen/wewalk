@@ -287,16 +287,15 @@ int main(void)
     {
       wewalk_ui_task_trigger_flag = 0;
       SERIALPROTOCOLECHO_ReceiveCargo(&hUI.serialUI);
-			SERIALPROTOCOLECHO_ReceiveCargo(&hSerialPC); 
       WEWALKUI_Host(&hWeWalk);
-      ui_scheduler_count += 2;
+      ui_scheduler_count += 20;
       ui_scheduler_time_check = (float)HAL_GetTick() - (float)ui_scheduler_count;
     }
     
     if (wewalk_main_task_trigger_flag)
     {
       wewalk_main_task_trigger_flag = 0;
-			
+			SERIALPROTOCOLECHO_ReceiveCargo(&hSerialPC); 
       SERIALPROTOCOLECHO_MasterHost(&hSerialPC);
       WEWALK_Main(&hWeWalk);
       main_scheduler_count += 10;
@@ -642,7 +641,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 47500-1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 10-1;
+  htim3.Init.Period = 100-1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -1120,7 +1119,7 @@ void HAL_FDCAN_RxFifo1Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo1ITs)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  if (htim == &htim3)//WeWalk UI frequency: 237.5M / 47500 / 10 = 500 Hz (0.002 ms)
+  if (htim == &htim3)//WeWalk UI frequency: 237.5M / 47500 / 100 = 50 Hz (0.02 s)
     wewalk_ui_task_trigger_flag = 1;
   else if (htim == &htim4)//WeWalk main frequency: 237.5M / 47500 / 50 = 100 Hz
   {
