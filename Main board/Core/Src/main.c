@@ -287,6 +287,7 @@ int main(void)
     {
       wewalk_ui_task_trigger_flag = 0;
       SERIALPROTOCOLECHO_ReceiveCargo(&hUI.serialUI);
+			SERIALPROTOCOLECHO_ReceiveCargo(&hSerialPC); 
       WEWALKUI_Host(&hWeWalk);
       ui_scheduler_count += 2;
       ui_scheduler_time_check = (float)HAL_GetTick() - (float)ui_scheduler_count;
@@ -295,8 +296,7 @@ int main(void)
     if (wewalk_main_task_trigger_flag)
     {
       wewalk_main_task_trigger_flag = 0;
-      
-      SERIALPROTOCOLECHO_ReceiveCargo(&hSerialPC);
+			
       SERIALPROTOCOLECHO_MasterHost(&hSerialPC);
       WEWALK_Main(&hWeWalk);
       main_scheduler_count += 10;

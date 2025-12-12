@@ -388,6 +388,7 @@ void WEWALK_GaitPhaseDetection(WeWalkUnilateralHandle* hwewalk)
   {
     case WEWALK_UNILATERAL_GAIT_PHASE_DETECTION_ALGORITHM_ETH:
     {
+			
       break;
     }
     case WEWALK_UNILATERAL_GAIT_PHASE_DETECTION_ALGORITHM_ICR:

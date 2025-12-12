@@ -75,6 +75,10 @@ typedef struct
 {
   enum WEWALK_UNILATERAL_GAIT_PHASE_DETECTION_ALGORITHM      gaitPhaseDetectionType;
   LowPassFilterHandle                                        hFilterGaitPhaseDetectionIndicator;
+	float																												something;
+	// Unsigned integer: uint32_t 
+	// signed integer:   int32_t
+	// Floating point    float
 }GaitPhaseDetectionHandle;
 
 typedef struct
