@@ -15,6 +15,7 @@
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 
@@ -68,6 +69,9 @@ protected:
     touchgfx::GraphLabelsY graph_angle_x_thighMajorYAxisLabel;
     touchgfx::GraphElementLine graph_angle_x_thighLine1;
     touchgfx::PainterRGB565 graph_angle_x_thighLine1Painter;
+    touchgfx::TextAreaWithOneWildcard textArea_ThighAngleY;
+    touchgfx::TextAreaWithOneWildcard textArea_ThighAngleX;
+    touchgfx::TextAreaWithOneWildcard textArea_ThighAngleZ;
     touchgfx::Container container_AngleShank;
     touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::GraphScroll<20> graph_angle_z_shank;
@@ -91,6 +95,9 @@ protected:
     touchgfx::GraphLabelsY graph_angle_x_shankMajorYAxisLabel;
     touchgfx::GraphElementLine graph_angle_x_shankLine1;
     touchgfx::PainterRGB565 graph_angle_x_shankLine1Painter;
+    touchgfx::TextAreaWithOneWildcard textArea_ShankAngleX;
+    touchgfx::TextAreaWithOneWildcard textArea_ShankAngleY;
+    touchgfx::TextAreaWithOneWildcard textArea_ShankAngleZ;
     touchgfx::Container container3;
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
@@ -103,6 +110,22 @@ protected:
     touchgfx::TextArea textArea2_1_1;
     touchgfx::TextArea textArea1_1;
     touchgfx::TextArea textArea1;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTAREA_THIGHANGLEY_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_ThighAngleYBuffer[TEXTAREA_THIGHANGLEY_SIZE];
+    static const uint16_t TEXTAREA_THIGHANGLEX_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_ThighAngleXBuffer[TEXTAREA_THIGHANGLEX_SIZE];
+    static const uint16_t TEXTAREA_THIGHANGLEZ_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_ThighAngleZBuffer[TEXTAREA_THIGHANGLEZ_SIZE];
+    static const uint16_t TEXTAREA_SHANKANGLEX_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_ShankAngleXBuffer[TEXTAREA_SHANKANGLEX_SIZE];
+    static const uint16_t TEXTAREA_SHANKANGLEY_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_ShankAngleYBuffer[TEXTAREA_SHANKANGLEY_SIZE];
+    static const uint16_t TEXTAREA_SHANKANGLEZ_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_ShankAngleZBuffer[TEXTAREA_SHANKANGLEZ_SIZE];
 
 private:
 

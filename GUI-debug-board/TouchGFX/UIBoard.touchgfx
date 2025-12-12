@@ -4415,13 +4415,14 @@
             "X": 413,
             "Y": 77,
             "Width": 350,
-            "Height": 350,
+            "Height": 403,
             "Components": [
               {
                 "Type": "BoxWithBorder",
                 "Name": "boxWithBorder2",
+                "Y": 127,
                 "Width": 350,
-                "Height": 350,
+                "Height": 276,
                 "Color": {
                   "Red": 255,
                   "Green": 255,
@@ -4432,8 +4433,9 @@
               {
                 "Type": "DynamicGraph",
                 "Name": "graph_angle_z_thigh",
+                "Y": 127,
                 "Width": 350,
-                "Height": 350,
+                "Height": 276,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
                 "MaxY": 185.0,
@@ -4494,9 +4496,9 @@
               {
                 "Type": "DynamicGraph",
                 "Name": "graph_angle_y_thigh",
-                "Y": 1,
+                "Y": 127,
                 "Width": 350,
-                "Height": 349,
+                "Height": 276,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
                 "MaxY": 185.0,
@@ -4557,8 +4559,9 @@
               {
                 "Type": "DynamicGraph",
                 "Name": "graph_angle_x_thigh",
+                "Y": 127,
                 "Width": 350,
-                "Height": 350,
+                "Height": 276,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
                 "MaxY": 185.0,
@@ -4613,23 +4616,70 @@
                   "TextRotation": "0",
                   "Position": "Left"
                 }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea_ThighAngleY",
+                "X": 11,
+                "Y": 49,
+                "Width": 42,
+                "Height": 24,
+                "TextId": "__SingleUse_9MRU",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_RY4L",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea_ThighAngleX",
+                "X": 11,
+                "Y": 16,
+                "Width": 42,
+                "Height": 24,
+                "TextId": "__SingleUse_WK4K",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_W486",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea_ThighAngleZ",
+                "X": 11,
+                "Y": 84,
+                "Width": 41,
+                "Height": 24,
+                "TextId": "__SingleUse_D6TN",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_OYLK",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
               }
             ]
           },
           {
             "Type": "Container",
             "Name": "container_AngleShank",
-            "X": 50,
-            "Y": 76,
+            "Y": 78,
             "Width": 350,
-            "Height": 350,
+            "Height": 402,
             "Components": [
               {
                 "Type": "BoxWithBorder",
                 "Name": "boxWithBorder1",
-                "Y": 1,
+                "Y": 126,
                 "Width": 350,
-                "Height": 349,
+                "Height": 276,
                 "Color": {
                   "Red": 255,
                   "Green": 255,
@@ -4640,9 +4690,9 @@
               {
                 "Type": "DynamicGraph",
                 "Name": "graph_angle_z_shank",
-                "Y": 1,
+                "Y": 126,
                 "Width": 350,
-                "Height": 349,
+                "Height": 276,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
                 "MaxY": 185.0,
@@ -4703,9 +4753,9 @@
               {
                 "Type": "DynamicGraph",
                 "Name": "graph_angle_y_shank",
-                "Y": 1,
+                "Y": 126,
                 "Width": 350,
-                "Height": 349,
+                "Height": 276,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
                 "MaxY": 185.0,
@@ -4766,9 +4816,9 @@
               {
                 "Type": "DynamicGraph",
                 "Name": "graph_angle_x_shank",
-                "Y": 1,
+                "Y": 126,
                 "Width": 350,
-                "Height": 349,
+                "Height": 276,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
                 "MaxY": 185.0,
@@ -4823,6 +4873,54 @@
                   "TextId": "voltage",
                   "TextRotation": "0",
                   "Position": "Left"
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea_ShankAngleX",
+                "X": 7,
+                "Y": 15,
+                "Width": 42,
+                "Height": 24,
+                "TextId": "__SingleUse_3WAK",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_STZO",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea_ShankAngleY",
+                "X": 7,
+                "Y": 48,
+                "Width": 42,
+                "Height": 24,
+                "TextId": "__SingleUse_J70M",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FUUF",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea_ShankAngleZ",
+                "X": 7,
+                "Y": 83,
+                "Width": 41,
+                "Height": 24,
+                "TextId": "__SingleUse_CGCE",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_J5XE",
+                  "UseBuffer": true,
+                  "BufferSize": 20
                 }
               }
             ]
@@ -4931,8 +5029,8 @@
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 170,
-            "Y": 53,
+            "X": 133,
+            "Y": 60,
             "Width": 104,
             "Height": 18,
             "TextId": "__SingleUse_XX5P",

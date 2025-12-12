@@ -16,6 +16,42 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_OYLK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_D6TN" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">z: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RY4L" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_9MRU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">y: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_W486" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_WK4K" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">x: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_J5XE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_CGCE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">z: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_FUUF" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_J70M" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">y: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_STZO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_3WAK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">x: &lt;value&gt;</Translation>
+      </Text>
       <Text Id="ResourceId1" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text</Translation>
       </Text>
