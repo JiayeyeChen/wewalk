@@ -322,6 +322,18 @@
     <Filter Include="Source Files\generated\gui_generated\screen_wewalkliveplot_accelerometer_screen">
       <UniqueIdentifier>D19030E2-A7D5-229A-CEDA-9B0BA6392F7D</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\screen_wewalkliveplot_forcesensor_screen">
+      <UniqueIdentifier>B30B013D-2D42-2052-C778-659DC162BE97</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen_wewalkliveplot_forcesensor_screen">
+      <UniqueIdentifier>EC2FB162-3F84-49A6-E02E-613F507A10CC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen_wewalkliveplot_forcesensor_screen">
+      <UniqueIdentifier>532B17A7-5821-FAE4-B22F-7E930C1C9F84</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen_wewalkliveplot_forcesensor_screen">
+      <UniqueIdentifier>D14C03BC-7653-5E33-F8B0-56571BC357B2</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -461,6 +473,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen_wewalkliveplot_motor_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorPresenter.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_forcesensor_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorView.cpp">
+      <Filter>Source Files\gui\screen_wewalkliveplot_forcesensor_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen_wewalkliveplot_forcesensor_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1017,6 +1038,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen_wewalkliveplot_motor_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorPresenter.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_forcesensor_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorView.hpp">
+      <Filter>Header Files\gui\screen_wewalkliveplot_forcesensor_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen_wewalkliveplot_forcesensor_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -24,6 +24,15 @@ public:
     SCREEN_WeWalkLivePlot_GyroscopeViewBase();
     virtual ~SCREEN_WeWalkLivePlot_GyroscopeViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void UpdateGraphs()
+    {
+        // Override and implement this function in SCREEN_WeWalkLivePlot_Gyroscope
+    }
 
 protected:
     FrontendApplication& application() {

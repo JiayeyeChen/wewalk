@@ -23,6 +23,15 @@ public:
     SCREEN_WeWalkLivePlot_MotorViewBase();
     virtual ~SCREEN_WeWalkLivePlot_MotorViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void UpdateGraphs()
+    {
+        // Override and implement this function in SCREEN_WeWalkLivePlot_Motor
+    }
 
 protected:
     FrontendApplication& application() {

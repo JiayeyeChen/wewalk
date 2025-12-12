@@ -17,15 +17,6 @@ public:
     SCREEN_WeWalkLivePlotViewBase();
     virtual ~SCREEN_WeWalkLivePlotViewBase();
     virtual void setupScreen();
-    virtual void handleTickEvent();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void UpdateGraphs()
-    {
-        // Override and implement this function in SCREEN_WeWalkLivePlot
-    }
 
 protected:
     FrontendApplication& application() {
@@ -39,6 +30,7 @@ protected:
     touchgfx::Box box1;
     touchgfx::ButtonWithIcon button_ReturnToTheLast;
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton_AccelerometerLivePlot;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton_AngleLivePlot;
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton_GyroscopeLivePlot;
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton_MotorLivePlot;
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton_ForcePressureLivePlot;
@@ -49,11 +41,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<SCREEN_WeWalkLivePlotViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<SCREEN_WeWalkLivePlotViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

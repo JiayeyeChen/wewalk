@@ -16,6 +16,27 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="ResourceId1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_YZTM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Angles</Translation>
+      </Text>
+      <Text Id="__SingleUse_551U" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Toe</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q1E9" Alignment="Left" TypographyId="Mid">
+        <Translation Language="GB">Heel</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZH5M" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">z</Translation>
+      </Text>
+      <Text Id="__SingleUse_X8A1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">y</Translation>
+      </Text>
+      <Text Id="__SingleUse_PA37" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">x</Translation>
+      </Text>
       <Text Id="__SingleUse_PRUZ" Alignment="Left" TypographyId="Mid">
         <Translation Language="GB">Torque</Translation>
       </Text>
@@ -362,7 +383,7 @@
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
       <Text Id="time" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;&gt;</Translation>
+        <Translation Language="GB">&lt;time&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_I8GG" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">WeWalk</Translation>

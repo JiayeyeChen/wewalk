@@ -24,6 +24,15 @@ public:
     SCREEN_WeWalkLivePlot_AccelerometerViewBase();
     virtual ~SCREEN_WeWalkLivePlot_AccelerometerViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void UpdateGraphs()
+    {
+        // Override and implement this function in SCREEN_WeWalkLivePlot_Accelerometer
+    }
 
 protected:
     FrontendApplication& application() {
@@ -89,6 +98,9 @@ protected:
     touchgfx::PainterRGB565 line1_1Painter;
     touchgfx::Line line1_2;
     touchgfx::PainterRGB565 line1_2Painter;
+    touchgfx::TextArea textArea2;
+    touchgfx::TextArea textArea2_1;
+    touchgfx::TextArea textArea2_1_1;
     touchgfx::TextArea textArea1_1;
     touchgfx::TextArea textArea1;
 

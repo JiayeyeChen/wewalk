@@ -342,6 +342,59 @@
           },
           {
             "Type": "FlexButton",
+            "Name": "flexButton_AngleLivePlot",
+            "X": 1,
+            "Y": 119,
+            "Width": 214,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "TextId": "__SingleUse_YZTM",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 214,
+                "Height": 44,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
             "Name": "flexButton_GyroscopeLivePlot",
             "X": 1,
             "Y": 60,
@@ -397,7 +450,7 @@
             "Type": "FlexButton",
             "Name": "flexButton_MotorLivePlot",
             "X": 1,
-            "Y": 119,
+            "Y": 240,
             "Width": 214,
             "Height": 44,
             "ButtonTrigger": {
@@ -516,12 +569,61 @@
           {
             "InteractionName": "Interaction2",
             "Trigger": {
-              "Type": "TriggerOnEveryTick",
-              "TickCount": 1
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_AccelerometerLivePlot"
             },
             "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "UpdateGraphs"
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot_Accelerometer"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_GyroscopeLivePlot"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot_Gyroscope"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_AngleLivePlot"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot_Angle"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_ForcePressureLivePlot"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot_ForceSensor"
+            }
+          },
+          {
+            "InteractionName": "Interaction6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_MotorLivePlot"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot_Motor"
             }
           }
         ]
@@ -3744,8 +3846,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 3.14,
+                "MinY": -3.14,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -3807,8 +3909,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 3.14,
+                "MinY": -3.14,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -3870,8 +3972,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 3.14,
+                "MinY": -3.14,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -3955,8 +4057,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 3.14,
+                "MinY": -3.14,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4018,8 +4120,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 3.14,
+                "MinY": -3.14,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4081,8 +4183,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 3.14,
+                "MinY": -3.14,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4262,6 +4364,17 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "SCREEN_WeWalkLivePlot"
             }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "UpdateGraphs"
+            }
           }
         ]
       },
@@ -4323,8 +4436,8 @@
                 "Height": 350,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 185.0,
+                "MinY": -185.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4386,8 +4499,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 185.0,
+                "MinY": -185.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4448,8 +4561,8 @@
                 "Height": 350,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 185.0,
+                "MinY": -185.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4532,8 +4645,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 185.0,
+                "MinY": -185.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4595,8 +4708,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 185.0,
+                "MinY": -185.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4658,8 +4771,8 @@
                 "Height": 349,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 185.0,
+                "MinY": -185.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4839,6 +4952,17 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "SCREEN_WeWalkLivePlot"
             }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "UpdateGraphs"
+            }
           }
         ]
       },
@@ -4901,8 +5025,8 @@
                 "Height": 224,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 190.0,
+                "MinY": -10.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -4986,8 +5110,8 @@
                 "Height": 224,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 180.0,
+                "MinY": -180.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -5071,8 +5195,8 @@
                 "Height": 175,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 35.0,
+                "MinY": -35.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -5156,8 +5280,8 @@
                 "Height": 175,
                 "DataSeed": 1605232134,
                 "NumberOfValues": 20,
-                "MaxY": 13.0,
-                "MinY": -13.0,
+                "MaxY": 50.0,
+                "MinY": -50.0,
                 "Precision": "0.0001",
                 "LastIndex": 19,
                 "XAxisScale": 1.0,
@@ -5268,6 +5392,264 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "SCREEN_WeWalkLivePlot"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "UpdateGraphs"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SCREEN_WeWalkLivePlot_ForceSensor",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "button_ReturnToTheLast",
+            "X": 740,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_outline_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_outline_disabled.json"
+          },
+          {
+            "Type": "Container",
+            "Name": "container_Heel",
+            "X": 413,
+            "Y": 77,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder2",
+                "Width": 350,
+                "Height": 350,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_heel",
+                "Width": 350,
+                "Height": 350,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 4.0,
+                "MinY": -0.5,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 252
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container_Toe",
+            "X": 50,
+            "Y": 76,
+            "Width": 350,
+            "Height": 350,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "boxWithBorder1",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "DynamicGraph",
+                "Name": "graph_toe",
+                "Y": 1,
+                "Width": 350,
+                "Height": 349,
+                "DataSeed": 1605232134,
+                "NumberOfValues": 20,
+                "MaxY": 4.0,
+                "MinY": -0.5,
+                "Precision": "0.0001",
+                "LastIndex": 19,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphScroll",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 4,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Red": 207,
+                      "Blue": 7
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Interval": 6.0,
+                  "LineWidth": 1
+                },
+                "XAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 10.0,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "time",
+                  "TextRotation": "0",
+                  "Position": "Bottom"
+                },
+                "YAxisLabel": {
+                  "Type": "GraphLabel",
+                  "Interval": 0.6,
+                  "DecimalSeparator": "Point",
+                  "TextColor": {
+                    "Red": 20,
+                    "Green": 151,
+                    "Blue": 197
+                  },
+                  "TextId": "voltage",
+                  "TextRotation": "0",
+                  "Position": "Left"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 549,
+            "Y": 51,
+            "Width": 38,
+            "Height": 18,
+            "TextId": "__SingleUse_Q1E9",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 170,
+            "Y": 53,
+            "Width": 30,
+            "Height": 18,
+            "TextId": "__SingleUse_551U",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_ReturnToTheLast"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SCREEN_WeWalkLivePlot"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "UpdateGraphs"
             }
           }
         ]
@@ -5684,12 +6066,12 @@
                 ],
                 "XAxisGrid": {
                   "Type": "GraphGrid",
-                  "Interval": 6.0,
+                  "Interval": 10.0,
                   "LineWidth": 1
                 },
                 "YAxisGrid": {
                   "Type": "GraphGrid",
-                  "Interval": 6.0,
+                  "Interval": 1.0,
                   "LineWidth": 1
                 },
                 "XAxisLabel": {
@@ -5778,6 +6160,36 @@
                 "EndY": 5.0,
                 "LineWidth": 5.0,
                 "LineEndingStyle": "Round"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2",
+                "X": 58,
+                "Width": 13,
+                "Height": 24,
+                "TextId": "__SingleUse_PA37",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2_1",
+                "X": 138,
+                "Width": 13,
+                "Height": 24,
+                "TextId": "__SingleUse_X8A1",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea2_1_1",
+                "X": 214,
+                "Width": 12,
+                "Height": 24,
+                "TextId": "__SingleUse_ZH5M",
+                "TextRotation": "0",
+                "AutoSize": true
               }
             ]
           },
@@ -5815,6 +6227,17 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "SCREEN_WeWalkLivePlot"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "UpdateGraphs"
             }
           }
         ]

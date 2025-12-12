@@ -44,6 +44,21 @@ public:
 
     void gotoScreen_ResearchScreenWipeTransitionEast();
 
+    // SCREEN_WeWalkLivePlot_Gyroscope
+    void gotoSCREEN_WeWalkLivePlot_GyroscopeScreenNoTransition();
+
+    // SCREEN_WeWalkLivePlot_Angle
+    void gotoSCREEN_WeWalkLivePlot_AngleScreenNoTransition();
+
+    // SCREEN_WeWalkLivePlot_Motor
+    void gotoSCREEN_WeWalkLivePlot_MotorScreenNoTransition();
+
+    // SCREEN_WeWalkLivePlot_ForceSensor
+    void gotoSCREEN_WeWalkLivePlot_ForceSensorScreenNoTransition();
+
+    // SCREEN_WeWalkLivePlot_Accelerometer
+    void gotoSCREEN_WeWalkLivePlot_AccelerometerScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -72,6 +87,21 @@ protected:
     void gotoScreen_ResearchScreenNoTransitionImpl();
 
     void gotoScreen_ResearchScreenWipeTransitionEastImpl();
+
+    // SCREEN_WeWalkLivePlot_Gyroscope
+    void gotoSCREEN_WeWalkLivePlot_GyroscopeScreenNoTransitionImpl();
+
+    // SCREEN_WeWalkLivePlot_Angle
+    void gotoSCREEN_WeWalkLivePlot_AngleScreenNoTransitionImpl();
+
+    // SCREEN_WeWalkLivePlot_Motor
+    void gotoSCREEN_WeWalkLivePlot_MotorScreenNoTransitionImpl();
+
+    // SCREEN_WeWalkLivePlot_ForceSensor
+    void gotoSCREEN_WeWalkLivePlot_ForceSensorScreenNoTransitionImpl();
+
+    // SCREEN_WeWalkLivePlot_Accelerometer
+    void gotoSCREEN_WeWalkLivePlot_AccelerometerScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

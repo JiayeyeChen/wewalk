@@ -37,7 +37,7 @@ SCREEN_WeWalkLivePlot_MotorViewBase::SCREEN_WeWalkLivePlot_MotorViewBase() :
     graph_angle.setScale(10000);
     graph_angle.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle.setGraphRangeY(-13, 13);
+    graph_angle.setGraphRangeY(-10, 190);
     graph_angleMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angleMajorXAxisGrid.setInterval(6);
     graph_angleMajorXAxisGrid.setLineWidth(1);
@@ -83,7 +83,7 @@ SCREEN_WeWalkLivePlot_MotorViewBase::SCREEN_WeWalkLivePlot_MotorViewBase() :
     graph_velocity.setScale(10000);
     graph_velocity.setGraphAreaMargin(0, 0, 0, 0);
     graph_velocity.setGraphAreaPadding(0, 0, 0, 0);
-    graph_velocity.setGraphRangeY(-13, 13);
+    graph_velocity.setGraphRangeY(-180, 180);
     graph_velocityMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_velocityMajorXAxisGrid.setInterval(6);
     graph_velocityMajorXAxisGrid.setLineWidth(1);
@@ -128,7 +128,7 @@ SCREEN_WeWalkLivePlot_MotorViewBase::SCREEN_WeWalkLivePlot_MotorViewBase() :
     graph_current.setScale(10000);
     graph_current.setGraphAreaMargin(0, 0, 0, 0);
     graph_current.setGraphAreaPadding(0, 0, 0, 0);
-    graph_current.setGraphRangeY(-13, 13);
+    graph_current.setGraphRangeY(-35, 35);
     graph_currentMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_currentMajorXAxisGrid.setInterval(6);
     graph_currentMajorXAxisGrid.setLineWidth(1);
@@ -173,7 +173,7 @@ SCREEN_WeWalkLivePlot_MotorViewBase::SCREEN_WeWalkLivePlot_MotorViewBase() :
     graph_torque.setScale(10000);
     graph_torque.setGraphAreaMargin(0, 0, 0, 0);
     graph_torque.setGraphAreaPadding(0, 0, 0, 0);
-    graph_torque.setGraphRangeY(-13, 13);
+    graph_torque.setGraphRangeY(-50, 50);
     graph_torqueMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_torqueMajorXAxisGrid.setInterval(6);
     graph_torqueMajorXAxisGrid.setLineWidth(1);
@@ -251,4 +251,12 @@ void SCREEN_WeWalkLivePlot_MotorViewBase::buttonCallbackHandler(const touchgfx::
         //Go to SCREEN_WeWalkLivePlot with no screen transition
         application().gotoSCREEN_WeWalkLivePlotScreenNoTransition();
     }
+}
+
+void SCREEN_WeWalkLivePlot_MotorViewBase::handleTickEvent()
+{
+    //Interaction2
+    //When every N tick call virtual function
+    //Call UpdateGraphs
+    UpdateGraphs();
 }

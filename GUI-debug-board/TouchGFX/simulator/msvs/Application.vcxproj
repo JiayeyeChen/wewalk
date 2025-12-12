@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -245,6 +248,9 @@
     <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_motor_screen\SCREEN_WeWalkLivePlot_MotorViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_wewalkliveplot_forcesensor_screen\SCREEN_WeWalkLivePlot_ForceSensorViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

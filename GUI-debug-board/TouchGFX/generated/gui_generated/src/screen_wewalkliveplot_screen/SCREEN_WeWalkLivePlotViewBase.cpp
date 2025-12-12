@@ -7,7 +7,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 SCREEN_WeWalkLivePlotViewBase::SCREEN_WeWalkLivePlotViewBase() :
-    buttonCallback(this, &SCREEN_WeWalkLivePlotViewBase::buttonCallbackHandler)
+    buttonCallback(this, &SCREEN_WeWalkLivePlotViewBase::buttonCallbackHandler),
+    flexButtonCallback(this, &SCREEN_WeWalkLivePlotViewBase::flexButtonCallbackHandler)
 {
     __background.setPosition(0, 0, 800, 480);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -29,8 +30,19 @@ SCREEN_WeWalkLivePlotViewBase::SCREEN_WeWalkLivePlotViewBase() :
     flexButton_AccelerometerLivePlot.setText(TypedText(T___SINGLEUSE_7YLD));
     flexButton_AccelerometerLivePlot.setTextPosition(0, 0, 214, 44);
     flexButton_AccelerometerLivePlot.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton_AccelerometerLivePlot.setAction(flexButtonCallback);
     flexButton_AccelerometerLivePlot.setPosition(0, 0, 214, 44);
     add(flexButton_AccelerometerLivePlot);
+
+    flexButton_AngleLivePlot.setBoxWithBorderPosition(0, 0, 214, 44);
+    flexButton_AngleLivePlot.setBorderSize(5);
+    flexButton_AngleLivePlot.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_AngleLivePlot.setText(TypedText(T___SINGLEUSE_YZTM));
+    flexButton_AngleLivePlot.setTextPosition(0, 0, 214, 44);
+    flexButton_AngleLivePlot.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton_AngleLivePlot.setAction(flexButtonCallback);
+    flexButton_AngleLivePlot.setPosition(1, 119, 214, 44);
+    add(flexButton_AngleLivePlot);
 
     flexButton_GyroscopeLivePlot.setBoxWithBorderPosition(0, 0, 214, 44);
     flexButton_GyroscopeLivePlot.setBorderSize(5);
@@ -38,6 +50,7 @@ SCREEN_WeWalkLivePlotViewBase::SCREEN_WeWalkLivePlotViewBase() :
     flexButton_GyroscopeLivePlot.setText(TypedText(T___SINGLEUSE_N0BE));
     flexButton_GyroscopeLivePlot.setTextPosition(0, 0, 214, 44);
     flexButton_GyroscopeLivePlot.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton_GyroscopeLivePlot.setAction(flexButtonCallback);
     flexButton_GyroscopeLivePlot.setPosition(1, 60, 214, 44);
     add(flexButton_GyroscopeLivePlot);
 
@@ -47,7 +60,8 @@ SCREEN_WeWalkLivePlotViewBase::SCREEN_WeWalkLivePlotViewBase() :
     flexButton_MotorLivePlot.setText(TypedText(T___SINGLEUSE_CYIE));
     flexButton_MotorLivePlot.setTextPosition(0, 0, 214, 44);
     flexButton_MotorLivePlot.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton_MotorLivePlot.setPosition(1, 119, 214, 44);
+    flexButton_MotorLivePlot.setAction(flexButtonCallback);
+    flexButton_MotorLivePlot.setPosition(1, 240, 214, 44);
     add(flexButton_MotorLivePlot);
 
     flexButton_ForcePressureLivePlot.setBoxWithBorderPosition(0, 0, 214, 44);
@@ -56,6 +70,7 @@ SCREEN_WeWalkLivePlotViewBase::SCREEN_WeWalkLivePlotViewBase() :
     flexButton_ForcePressureLivePlot.setText(TypedText(T___SINGLEUSE_XBMI));
     flexButton_ForcePressureLivePlot.setTextPosition(0, 0, 214, 44);
     flexButton_ForcePressureLivePlot.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton_ForcePressureLivePlot.setAction(flexButtonCallback);
     flexButton_ForcePressureLivePlot.setPosition(0, 177, 214, 44);
     add(flexButton_ForcePressureLivePlot);
 }
@@ -81,10 +96,41 @@ void SCREEN_WeWalkLivePlotViewBase::buttonCallbackHandler(const touchgfx::Abstra
     }
 }
 
-void SCREEN_WeWalkLivePlotViewBase::handleTickEvent()
+void SCREEN_WeWalkLivePlotViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
-    //Interaction2
-    //When every N tick call virtual function
-    //Call UpdateGraphs
-    UpdateGraphs();
+    if (&src == &flexButton_AccelerometerLivePlot)
+    {
+        //Interaction2
+        //When flexButton_AccelerometerLivePlot clicked change screen to SCREEN_WeWalkLivePlot_Accelerometer
+        //Go to SCREEN_WeWalkLivePlot_Accelerometer with no screen transition
+        application().gotoSCREEN_WeWalkLivePlot_AccelerometerScreenNoTransition();
+    }
+    if (&src == &flexButton_GyroscopeLivePlot)
+    {
+        //Interaction3
+        //When flexButton_GyroscopeLivePlot clicked change screen to SCREEN_WeWalkLivePlot_Gyroscope
+        //Go to SCREEN_WeWalkLivePlot_Gyroscope with no screen transition
+        application().gotoSCREEN_WeWalkLivePlot_GyroscopeScreenNoTransition();
+    }
+    if (&src == &flexButton_AngleLivePlot)
+    {
+        //Interaction4
+        //When flexButton_AngleLivePlot clicked change screen to SCREEN_WeWalkLivePlot_Angle
+        //Go to SCREEN_WeWalkLivePlot_Angle with no screen transition
+        application().gotoSCREEN_WeWalkLivePlot_AngleScreenNoTransition();
+    }
+    if (&src == &flexButton_ForcePressureLivePlot)
+    {
+        //Interaction5
+        //When flexButton_ForcePressureLivePlot clicked change screen to SCREEN_WeWalkLivePlot_ForceSensor
+        //Go to SCREEN_WeWalkLivePlot_ForceSensor with no screen transition
+        application().gotoSCREEN_WeWalkLivePlot_ForceSensorScreenNoTransition();
+    }
+    if (&src == &flexButton_MotorLivePlot)
+    {
+        //Interaction6
+        //When flexButton_MotorLivePlot clicked change screen to SCREEN_WeWalkLivePlot_Motor
+        //Go to SCREEN_WeWalkLivePlot_Motor with no screen transition
+        application().gotoSCREEN_WeWalkLivePlot_MotorScreenNoTransition();
+    }
 }

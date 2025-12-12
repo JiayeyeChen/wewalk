@@ -229,13 +229,13 @@ SCREEN_WeWalkLivePlot_AccelerometerViewBase::SCREEN_WeWalkLivePlot_Accelerometer
     graph_acc_x_shank.setGraphAreaPadding(0, 0, 0, 0);
     graph_acc_x_shank.setGraphRangeY(-13, 13);
     graph_acc_x_shankMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    graph_acc_x_shankMajorXAxisGrid.setInterval(6);
+    graph_acc_x_shankMajorXAxisGrid.setInterval(10);
     graph_acc_x_shankMajorXAxisGrid.setLineWidth(1);
     graph_acc_x_shankMajorXAxisGrid.setScale(10000);
     graph_acc_x_shank.addGraphElement(graph_acc_x_shankMajorXAxisGrid);
 
     graph_acc_x_shankMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    graph_acc_x_shankMajorYAxisGrid.setInterval(6);
+    graph_acc_x_shankMajorYAxisGrid.setInterval(1);
     graph_acc_x_shankMajorYAxisGrid.setLineWidth(1);
     graph_acc_x_shankMajorYAxisGrid.setScale(10000);
     graph_acc_x_shank.addGraphElement(graph_acc_x_shankMajorYAxisGrid);
@@ -289,6 +289,24 @@ SCREEN_WeWalkLivePlot_AccelerometerViewBase::SCREEN_WeWalkLivePlot_Accelerometer
     line1_2.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
     container3.add(line1_2);
 
+    textArea2.setXY(58, 0);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PA37));
+    container3.add(textArea2);
+
+    textArea2_1.setXY(138, 0);
+    textArea2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea2_1.setLinespacing(0);
+    textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_X8A1));
+    container3.add(textArea2_1);
+
+    textArea2_1_1.setXY(214, 0);
+    textArea2_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea2_1_1.setLinespacing(0);
+    textArea2_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZH5M));
+    container3.add(textArea2_1_1);
+
     add(container3);
 
     textArea1_1.setXY(547, 51);
@@ -323,4 +341,12 @@ void SCREEN_WeWalkLivePlot_AccelerometerViewBase::buttonCallbackHandler(const to
         //Go to SCREEN_WeWalkLivePlot with no screen transition
         application().gotoSCREEN_WeWalkLivePlotScreenNoTransition();
     }
+}
+
+void SCREEN_WeWalkLivePlot_AccelerometerViewBase::handleTickEvent()
+{
+    //Interaction2
+    //When every N tick call virtual function
+    //Call UpdateGraphs
+    UpdateGraphs();
 }

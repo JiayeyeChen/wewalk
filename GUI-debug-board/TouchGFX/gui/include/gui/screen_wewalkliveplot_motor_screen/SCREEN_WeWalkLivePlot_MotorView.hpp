@@ -11,6 +11,7 @@ public:
     virtual ~SCREEN_WeWalkLivePlot_MotorView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void UpdateGraphs();
 protected:
 };
 

@@ -37,7 +37,7 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
     graph_angle_z_thigh.setScale(10000);
     graph_angle_z_thigh.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle_z_thigh.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle_z_thigh.setGraphRangeY(-13, 13);
+    graph_angle_z_thigh.setGraphRangeY(-185, 185);
     graph_angle_z_thighMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angle_z_thighMajorXAxisGrid.setInterval(6);
     graph_angle_z_thighMajorXAxisGrid.setLineWidth(1);
@@ -74,7 +74,7 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
     graph_angle_y_thigh.setScale(10000);
     graph_angle_y_thigh.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle_y_thigh.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle_y_thigh.setGraphRangeY(-13, 13);
+    graph_angle_y_thigh.setGraphRangeY(-185, 185);
     graph_angle_y_thighMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angle_y_thighMajorXAxisGrid.setInterval(6);
     graph_angle_y_thighMajorXAxisGrid.setLineWidth(1);
@@ -110,7 +110,7 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
     graph_angle_x_thigh.setScale(10000);
     graph_angle_x_thigh.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle_x_thigh.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle_x_thigh.setGraphRangeY(-13, 13);
+    graph_angle_x_thigh.setGraphRangeY(-185, 185);
     graph_angle_x_thighMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angle_x_thighMajorXAxisGrid.setInterval(6);
     graph_angle_x_thighMajorXAxisGrid.setLineWidth(1);
@@ -155,7 +155,7 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
     graph_angle_z_shank.setScale(10000);
     graph_angle_z_shank.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle_z_shank.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle_z_shank.setGraphRangeY(-13, 13);
+    graph_angle_z_shank.setGraphRangeY(-185, 185);
     graph_angle_z_shankMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angle_z_shankMajorXAxisGrid.setInterval(6);
     graph_angle_z_shankMajorXAxisGrid.setLineWidth(1);
@@ -191,7 +191,7 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
     graph_angle_y_shank.setScale(10000);
     graph_angle_y_shank.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle_y_shank.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle_y_shank.setGraphRangeY(-13, 13);
+    graph_angle_y_shank.setGraphRangeY(-185, 185);
     graph_angle_y_shankMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angle_y_shankMajorXAxisGrid.setInterval(6);
     graph_angle_y_shankMajorXAxisGrid.setLineWidth(1);
@@ -227,7 +227,7 @@ SCREEN_WeWalkLivePlot_AngleViewBase::SCREEN_WeWalkLivePlot_AngleViewBase() :
     graph_angle_x_shank.setScale(10000);
     graph_angle_x_shank.setGraphAreaMargin(0, 0, 0, 0);
     graph_angle_x_shank.setGraphAreaPadding(0, 0, 0, 0);
-    graph_angle_x_shank.setGraphRangeY(-13, 13);
+    graph_angle_x_shank.setGraphRangeY(-185, 185);
     graph_angle_x_shankMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_angle_x_shankMajorXAxisGrid.setInterval(6);
     graph_angle_x_shankMajorXAxisGrid.setLineWidth(1);
@@ -341,4 +341,12 @@ void SCREEN_WeWalkLivePlot_AngleViewBase::buttonCallbackHandler(const touchgfx::
         //Go to SCREEN_WeWalkLivePlot with no screen transition
         application().gotoSCREEN_WeWalkLivePlotScreenNoTransition();
     }
+}
+
+void SCREEN_WeWalkLivePlot_AngleViewBase::handleTickEvent()
+{
+    //Interaction2
+    //When every N tick call virtual function
+    //Call UpdateGraphs
+    UpdateGraphs();
 }

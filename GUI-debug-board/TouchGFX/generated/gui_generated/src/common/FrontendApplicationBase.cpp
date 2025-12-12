@@ -27,6 +27,8 @@
 #include <gui/screen_wewalkliveplot_angle_screen/SCREEN_WeWalkLivePlot_AnglePresenter.hpp>
 #include <gui/screen_wewalkliveplot_motor_screen/SCREEN_WeWalkLivePlot_MotorView.hpp>
 #include <gui/screen_wewalkliveplot_motor_screen/SCREEN_WeWalkLivePlot_MotorPresenter.hpp>
+#include <gui/screen_wewalkliveplot_forcesensor_screen/SCREEN_WeWalkLivePlot_ForceSensorView.hpp>
+#include <gui/screen_wewalkliveplot_forcesensor_screen/SCREEN_WeWalkLivePlot_ForceSensorPresenter.hpp>
 #include <gui/screen_wewalkliveplot_accelerometer_screen/SCREEN_WeWalkLivePlot_AccelerometerView.hpp>
 #include <gui/screen_wewalkliveplot_accelerometer_screen/SCREEN_WeWalkLivePlot_AccelerometerPresenter.hpp>
 
@@ -158,4 +160,69 @@ void FrontendApplicationBase::gotoScreen_ResearchScreenWipeTransitionEast()
 void FrontendApplicationBase::gotoScreen_ResearchScreenWipeTransitionEastImpl()
 {
     touchgfx::makeTransition<Screen_ResearchView, Screen_ResearchPresenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SCREEN_WeWalkLivePlot_Gyroscope
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_GyroscopeScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_GyroscopeScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_GyroscopeScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SCREEN_WeWalkLivePlot_GyroscopeView, SCREEN_WeWalkLivePlot_GyroscopePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SCREEN_WeWalkLivePlot_Angle
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_AngleScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_AngleScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_AngleScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SCREEN_WeWalkLivePlot_AngleView, SCREEN_WeWalkLivePlot_AnglePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SCREEN_WeWalkLivePlot_Motor
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_MotorScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_MotorScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_MotorScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SCREEN_WeWalkLivePlot_MotorView, SCREEN_WeWalkLivePlot_MotorPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SCREEN_WeWalkLivePlot_ForceSensor
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_ForceSensorScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_ForceSensorScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_ForceSensorScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SCREEN_WeWalkLivePlot_ForceSensorView, SCREEN_WeWalkLivePlot_ForceSensorPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SCREEN_WeWalkLivePlot_Accelerometer
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_AccelerometerScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_AccelerometerScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSCREEN_WeWalkLivePlot_AccelerometerScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SCREEN_WeWalkLivePlot_AccelerometerView, SCREEN_WeWalkLivePlot_AccelerometerPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

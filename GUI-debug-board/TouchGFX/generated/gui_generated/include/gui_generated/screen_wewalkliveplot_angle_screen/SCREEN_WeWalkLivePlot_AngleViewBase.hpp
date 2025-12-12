@@ -24,6 +24,15 @@ public:
     SCREEN_WeWalkLivePlot_AngleViewBase();
     virtual ~SCREEN_WeWalkLivePlot_AngleViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void UpdateGraphs()
+    {
+        // Override and implement this function in SCREEN_WeWalkLivePlot_Angle
+    }
 
 protected:
     FrontendApplication& application() {
