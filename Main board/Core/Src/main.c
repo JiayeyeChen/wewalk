@@ -1076,8 +1076,8 @@ void HAL_FDCAN_RxFifo1Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo1ITs)
   else if (temp_rxheader.Identifier == 12)
   {
     memcpy(&angleThigh[1].b8[0], &temp_can_rx[0], 8);
-    hWeWalkRight.data.angleThigh[1].f = angleThigh[1].f;
-    hWeWalkRight.data.angleThigh[2].f = angleThigh[2].f;
+    hWeWalkRight.data.angleThigh[2].f = angleThigh[1].f;
+    hWeWalkRight.data.angleThigh[1].f = angleThigh[2].f;
     thighIMURxCount += 0.00166666666f;
   }
   
@@ -1103,8 +1103,8 @@ void HAL_FDCAN_RxFifo1Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo1ITs)
   else if (temp_rxheader.Identifier == 15)
   {
     memcpy(&angleShank[1].b8[0], &temp_can_rx[0], 8);
-    hWeWalkRight.data.angleShank[1].f = angleShank[1].f;
-    hWeWalkRight.data.angleShank[2].f = angleShank[2].f;
+    hWeWalkRight.data.angleShank[2].f = angleShank[1].f;
+    hWeWalkRight.data.angleShank[1].f = angleShank[2].f;
     shankIMURxCount += 1.0f/600.0f;
   }
   else if (temp_rxheader.Identifier == 20)//Right foot plate sensor
