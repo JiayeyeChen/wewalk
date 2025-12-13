@@ -222,11 +222,15 @@ void SERIALPROTOCOLECHO_DatalogManagerReceive(SerialProtocolEchoHandle* hserial)
 				hserial->datalogTask = SERIALPROTOCOLECHO_DATALOG_TASK_SEND_LABEL;
   		break;
 		case SERIALPROTOCOLECHO_DATALOG_TASK_SEND_LABEL:
-			if (SERIALPROTOCOLECHO_IfNewMsgAndItIsTheString(hserial, "Label received", 0))
+    {
+      if (hserial->rxMsgCfm[0] == hserial->datalogLabel2SendPtr)
+      {
 				hserial->datalogLabel2SendPtr++;
+      }
 			if (hserial->datalogLabel2SendPtr >= hserial->dataSlotLen)
 				hserial->datalogTask = SERIALPROTOCOLECHO_DATALOG_TASK_SEND_DATA;
   		break;
+    }
 		case SERIALPROTOCOLECHO_DATALOG_TASK_SEND_DATA:
 			if (SERIALPROTOCOLECHO_IfNewMsgAndItIsTheString(hserial, "Datalog end", 0))
 				hserial->datalogTask = SERIALPROTOCOLECHO_DATALOG_TASK_END;
@@ -241,6 +245,7 @@ void SERIALPROTOCOLECHO_DatalogManagerReceive(SerialProtocolEchoHandle* hserial)
   	default:
   		break;
   }
+  hserial->ifNewMsg = 0;
 }
 
 void SERIALPROTOCOLECHO_StartDatalog(SerialProtocolEchoHandle* hserial)
