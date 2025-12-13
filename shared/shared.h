@@ -61,9 +61,9 @@ typedef struct
   union FloatUInt8 motorKneeJointAngleOffset;
   union FloatUInt8 impedanceControlSpringCoefficient, impedanceControlDampingCoefficient;
   union FloatUInt8 sineSwingControlMagnitude, sineSwingControlFrequency;//#11
-  union FloatUInt8 accelerationFieldMethodGaitPhaseDetectionXPosition, accelerationFieldMethodGaitPhaseDetectionYPosition; //#13
-  union FloatUInt8 accelerationFieldMethodGaitPhaseDetectionThreshold; //#14
-  union FloatUInt8 gppA, gppB, gppC, gppD, gppE, gppF, gppG, gppH; //#22
+  union FloatUInt8 gppA, gppB, gppC, gppD, gppE, gppF, gppG, gppH; //#19
+  union FloatUInt8 gppI, gppJ, gppK, gppL, gppM, gppN, gppO, gppP, gppQ; //#28
+  union FloatUInt8 gppR, gppS, gppT, gppU, gppV, gppW, gppX, gppY, gppZ; //#37
 }WeWalkUnilateralSettingsStruct;
 
 

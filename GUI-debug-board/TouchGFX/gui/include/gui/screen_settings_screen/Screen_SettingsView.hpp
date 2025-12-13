@@ -24,9 +24,6 @@ public:
     virtual void function_RightImpedanceControlDampingCoefficient_ButtonClicked();
     virtual void function_RightSineSwingControlMagnitude_ButtonClicked();
     virtual void function_RightSineSwingControlFrequency_ButtonClicked();
-    virtual void function_RightAccFieldMethodTargetPositionX_ButtonClicked();
-    virtual void function_RightAccFieldMethodTargetPositionY_ButtonClicked();
-    virtual void function_RightAccFieldMethodThreshold_ButtonClicked();
     virtual void function_GPPa_ButtonClicked();
     virtual void function_GPPb_ButtonClicked();
     virtual void function_GPPc_ButtonClicked();
@@ -35,6 +32,24 @@ public:
     virtual void function_GPPf_ButtonClicked();
     virtual void function_GPPg_ButtonClicked();
     virtual void function_GPPh_ButtonClicked();
+    virtual void function_GPPi_ButtonClicked();
+    virtual void function_GPPj_ButtonClicked();
+    virtual void function_GPPk_ButtonClicked();
+    virtual void function_GPPl_ButtonClicked();
+    virtual void function_GPPm_ButtonClicked();
+    virtual void function_GPPn_ButtonClicked();
+    virtual void function_GPPo_ButtonClicked();
+    virtual void function_GPPp_ButtonClicked();
+    virtual void function_GPPq_ButtonClicked();
+    virtual void function_GPPr_ButtonClicked();
+    virtual void function_GPPs_ButtonClicked();
+    virtual void function_GPPt_ButtonClicked();
+    virtual void function_GPPu_ButtonClicked();
+    virtual void function_GPPv_ButtonClicked();
+    virtual void function_GPPw_ButtonClicked();
+    virtual void function_GPPx_ButtonClicked();
+    virtual void function_GPPy_ButtonClicked();
+    virtual void function_GPPz_ButtonClicked();
 protected:
     CustomKeyboard keyboard;
     int namemod;

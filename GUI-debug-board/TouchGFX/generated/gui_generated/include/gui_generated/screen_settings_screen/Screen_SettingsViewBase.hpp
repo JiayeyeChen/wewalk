@@ -87,18 +87,6 @@ public:
     {
         // Override and implement this function in Screen_Settings
     }
-    virtual void function_RightAccFieldMethodTargetPositionX_ButtonClicked()
-    {
-        // Override and implement this function in Screen_Settings
-    }
-    virtual void function_RightAccFieldMethodTargetPositionY_ButtonClicked()
-    {
-        // Override and implement this function in Screen_Settings
-    }
-    virtual void function_RightAccFieldMethodThreshold_ButtonClicked()
-    {
-        // Override and implement this function in Screen_Settings
-    }
     virtual void function_GPPa_ButtonClicked()
     {
         // Override and implement this function in Screen_Settings
@@ -128,6 +116,78 @@ public:
         // Override and implement this function in Screen_Settings
     }
     virtual void function_GPPh_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPi_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPj_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPk_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPl_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPm_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPn_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPo_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPp_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPq_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPr_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPs_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPt_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPu_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPv_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPw_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPx_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPy_ButtonClicked()
+    {
+        // Override and implement this function in Screen_Settings
+    }
+    virtual void function_GPPz_ButtonClicked()
     {
         // Override and implement this function in Screen_Settings
     }
@@ -182,20 +242,11 @@ protected:
     touchgfx::TextAreaWithOneWildcard textArea_RightManualControlCurrentMultiplier;
     touchgfx::Container p3;
     touchgfx::TextArea textArea1_2;
-    touchgfx::TextArea textArea1_2_2;
-    touchgfx::TextArea textArea1_2_2_1;
-    touchgfx::TextArea textArea1_2_2_1_1;
     touchgfx::TextArea textArea1_2_1;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightSineSingControlMagnitude;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightSineSingControlFrequency;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightAccFieldMethodTargetPositionX;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightAccFieldMethodTargetPositionY;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightAccFieldMethodThreshold;
     touchgfx::TextAreaWithOneWildcard textArea_RightSineSwingControlMagnitude;
     touchgfx::TextAreaWithOneWildcard textArea_RightSineSwingControlFrequency;
-    touchgfx::TextAreaWithOneWildcard textArea_RightAccFieldMethodTargetPositionX;
-    touchgfx::TextAreaWithOneWildcard textArea_RightAccFieldMethodTargetPositionY;
-    touchgfx::TextAreaWithOneWildcard textArea_RightAccFieldMethodThreshold;
     touchgfx::Container p4;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPa;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPb;
@@ -221,6 +272,63 @@ protected:
     touchgfx::TextArea textArea1_2_1_1_1_1_1_1_1;
     touchgfx::TextArea textArea1_2_1_1_1_1_1_1_1_1;
     touchgfx::TextArea textArea1_2_1_1_1_1_1_1_1_1_1;
+    touchgfx::Container P5;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPi;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPj;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPk;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPl;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPm;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPn;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPo;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPi;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPj;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPk;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPl;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPm;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPn;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPo;
+    touchgfx::TextArea textArea1_2_1_1_2;
+    touchgfx::TextArea textArea1_2_1_1_2_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1;
+    touchgfx::Container p6;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_5;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_4;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_3;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_2;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPp;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPq;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPr;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPs;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPs;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPt;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPu;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPv;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPt;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPu;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPv;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPp;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPq;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPr;
+    touchgfx::Container p7;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPw;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPx;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPy;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton_RightGPPz;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPw;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPx;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPy;
+    touchgfx::TextAreaWithOneWildcard textArea_RightGPPz;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1;
+    touchgfx::TextArea textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1_1;
 
     /*
      * Wildcard Buffers
@@ -249,12 +357,6 @@ protected:
     touchgfx::Unicode::UnicodeChar textArea_RightSineSwingControlMagnitudeBuffer[TEXTAREA_RIGHTSINESWINGCONTROLMAGNITUDE_SIZE];
     static const uint16_t TEXTAREA_RIGHTSINESWINGCONTROLFREQUENCY_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textArea_RightSineSwingControlFrequencyBuffer[TEXTAREA_RIGHTSINESWINGCONTROLFREQUENCY_SIZE];
-    static const uint16_t TEXTAREA_RIGHTACCFIELDMETHODTARGETPOSITIONX_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textArea_RightAccFieldMethodTargetPositionXBuffer[TEXTAREA_RIGHTACCFIELDMETHODTARGETPOSITIONX_SIZE];
-    static const uint16_t TEXTAREA_RIGHTACCFIELDMETHODTARGETPOSITIONY_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textArea_RightAccFieldMethodTargetPositionYBuffer[TEXTAREA_RIGHTACCFIELDMETHODTARGETPOSITIONY_SIZE];
-    static const uint16_t TEXTAREA_RIGHTACCFIELDMETHODTHRESHOLD_SIZE = 20;
-    touchgfx::Unicode::UnicodeChar textArea_RightAccFieldMethodThresholdBuffer[TEXTAREA_RIGHTACCFIELDMETHODTHRESHOLD_SIZE];
     static const uint16_t TEXTAREA_RIGHTGPPA_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textArea_RightGPPaBuffer[TEXTAREA_RIGHTGPPA_SIZE];
     static const uint16_t TEXTAREA_RIGHTGPPB_SIZE = 20;
@@ -271,6 +373,42 @@ protected:
     touchgfx::Unicode::UnicodeChar textArea_RightGPPgBuffer[TEXTAREA_RIGHTGPPG_SIZE];
     static const uint16_t TEXTAREA_RIGHTGPPH_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textArea_RightGPPhBuffer[TEXTAREA_RIGHTGPPH_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPI_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPiBuffer[TEXTAREA_RIGHTGPPI_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPJ_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPjBuffer[TEXTAREA_RIGHTGPPJ_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPK_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPkBuffer[TEXTAREA_RIGHTGPPK_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPL_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPlBuffer[TEXTAREA_RIGHTGPPL_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPM_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPmBuffer[TEXTAREA_RIGHTGPPM_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPN_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPnBuffer[TEXTAREA_RIGHTGPPN_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPO_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPoBuffer[TEXTAREA_RIGHTGPPO_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPS_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPsBuffer[TEXTAREA_RIGHTGPPS_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPT_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPtBuffer[TEXTAREA_RIGHTGPPT_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPU_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPuBuffer[TEXTAREA_RIGHTGPPU_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPV_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPvBuffer[TEXTAREA_RIGHTGPPV_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPP_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPpBuffer[TEXTAREA_RIGHTGPPP_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPQ_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPqBuffer[TEXTAREA_RIGHTGPPQ_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPR_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPrBuffer[TEXTAREA_RIGHTGPPR_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPW_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPwBuffer[TEXTAREA_RIGHTGPPW_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPX_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPxBuffer[TEXTAREA_RIGHTGPPX_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPY_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPyBuffer[TEXTAREA_RIGHTGPPY_SIZE];
+    static const uint16_t TEXTAREA_RIGHTGPPZ_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar textArea_RightGPPzBuffer[TEXTAREA_RIGHTGPPZ_SIZE];
 
 private:
 

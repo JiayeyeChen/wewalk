@@ -107,21 +107,6 @@ void Screen_SettingsView::ReadButtonClicked()
   textArea_RightSineSwingControlFrequency.setWildcard(textArea_RightSineSwingControlFrequencyBuffer);
   textArea_RightSineSwingControlFrequency.invalidate();
   
-  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.accelerationFieldMethodGaitPhaseDetectionXPosition.f);
-  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightAccFieldMethodTargetPositionXBuffer, num_str, 10);
-  textArea_RightAccFieldMethodTargetPositionX.setWildcard(textArea_RightAccFieldMethodTargetPositionXBuffer);
-  textArea_RightAccFieldMethodTargetPositionX.invalidate();
-  
-  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.accelerationFieldMethodGaitPhaseDetectionYPosition.f);
-  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightAccFieldMethodTargetPositionYBuffer, num_str, 10);
-  textArea_RightAccFieldMethodTargetPositionY.setWildcard(textArea_RightAccFieldMethodTargetPositionYBuffer);
-  textArea_RightAccFieldMethodTargetPositionY.invalidate();
-  
-  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.accelerationFieldMethodGaitPhaseDetectionThreshold.f);
-  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightAccFieldMethodThresholdBuffer, num_str, 10);
-  textArea_RightAccFieldMethodThreshold.setWildcard(textArea_RightAccFieldMethodThresholdBuffer);
-  textArea_RightAccFieldMethodThreshold.invalidate();
-  
   ////////////////General Purpose Parameters////////////////
   Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppA.f);
   Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPaBuffer, num_str, 10);
@@ -162,6 +147,96 @@ void Screen_SettingsView::ReadButtonClicked()
   Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPhBuffer, num_str, 10);
   textArea_RightGPPh.setWildcard(textArea_RightGPPhBuffer);
   textArea_RightGPPh.invalidate();
+  ///////////////////////////////////
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppI.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPiBuffer, num_str, 10);
+  textArea_RightGPPi.setWildcard(textArea_RightGPPiBuffer);
+  textArea_RightGPPi.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppJ.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPjBuffer, num_str, 10);
+  textArea_RightGPPj.setWildcard(textArea_RightGPPjBuffer);
+  textArea_RightGPPj.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppK.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPkBuffer, num_str, 10);
+  textArea_RightGPPk.setWildcard(textArea_RightGPPkBuffer);
+  textArea_RightGPPk.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppL.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPlBuffer, num_str, 10);
+  textArea_RightGPPl.setWildcard(textArea_RightGPPlBuffer);
+  textArea_RightGPPl.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppM.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPmBuffer, num_str, 10);
+  textArea_RightGPPm.setWildcard(textArea_RightGPPmBuffer);
+  textArea_RightGPPm.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppN.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPnBuffer, num_str, 10);
+  textArea_RightGPPn.setWildcard(textArea_RightGPPnBuffer);
+  textArea_RightGPPn.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppO.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPoBuffer, num_str, 10);
+  textArea_RightGPPo.setWildcard(textArea_RightGPPoBuffer);
+  textArea_RightGPPo.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppP.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPpBuffer, num_str, 10);
+  textArea_RightGPPp.setWildcard(textArea_RightGPPpBuffer);
+  textArea_RightGPPp.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppQ.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPqBuffer, num_str, 10);
+  textArea_RightGPPq.setWildcard(textArea_RightGPPqBuffer);
+  textArea_RightGPPq.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppR.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPrBuffer, num_str, 10);
+  textArea_RightGPPr.setWildcard(textArea_RightGPPrBuffer);
+  textArea_RightGPPr.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppS.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPsBuffer, num_str, 10);
+  textArea_RightGPPs.setWildcard(textArea_RightGPPsBuffer);
+  textArea_RightGPPs.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppT.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPtBuffer, num_str, 10);
+  textArea_RightGPPt.setWildcard(textArea_RightGPPtBuffer);
+  textArea_RightGPPt.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppU.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPuBuffer, num_str, 10);
+  textArea_RightGPPu.setWildcard(textArea_RightGPPuBuffer);
+  textArea_RightGPPu.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppV.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPvBuffer, num_str, 10);
+  textArea_RightGPPv.setWildcard(textArea_RightGPPvBuffer);
+  textArea_RightGPPv.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppW.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPwBuffer, num_str, 10);
+  textArea_RightGPPw.setWildcard(textArea_RightGPPwBuffer);
+  textArea_RightGPPw.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppX.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPxBuffer, num_str, 10);
+  textArea_RightGPPx.setWildcard(textArea_RightGPPxBuffer);
+  textArea_RightGPPx.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppY.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPyBuffer, num_str, 10);
+  textArea_RightGPPy.setWildcard(textArea_RightGPPyBuffer);
+  textArea_RightGPPy.invalidate();
+  
+  Unicode::snprintfFloat(num_str, 10, "%#.5f", (const float)hUIHandheld.settingsRight.gppZ.f);
+  Unicode::strncpy((touchgfx::Unicode::UnicodeChar*)textArea_RightGPPzBuffer, num_str, 10);
+  textArea_RightGPPz.setWildcard(textArea_RightGPPzBuffer);
+  textArea_RightGPPz.invalidate();
 }
 
 void Screen_SettingsView::SaveButtonClicked()
@@ -217,48 +292,108 @@ void Screen_SettingsView::function_RightSineSwingControlFrequency_ButtonClicked(
 {
   hUIHandheld.settingUploadRightPtr = 11;
 }
-void Screen_SettingsView::function_RightAccFieldMethodTargetPositionX_ButtonClicked()
-{
-  hUIHandheld.settingUploadRightPtr = 12;
-}
-void Screen_SettingsView::function_RightAccFieldMethodTargetPositionY_ButtonClicked()
-{
-  hUIHandheld.settingUploadRightPtr = 13;
-}
-void Screen_SettingsView::function_RightAccFieldMethodThreshold_ButtonClicked()
-{
-  hUIHandheld.settingUploadRightPtr = 14;
-}
 //////
 void Screen_SettingsView::function_GPPa_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 15;
+  hUIHandheld.settingUploadRightPtr = 12;
 }
 void Screen_SettingsView::function_GPPb_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 16;
+  hUIHandheld.settingUploadRightPtr = 13;
 }
 void Screen_SettingsView::function_GPPc_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 17;
+  hUIHandheld.settingUploadRightPtr = 14;
 }
 void Screen_SettingsView::function_GPPd_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 18;
+  hUIHandheld.settingUploadRightPtr = 15;
 }
 void Screen_SettingsView::function_GPPe_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 19;
+  hUIHandheld.settingUploadRightPtr = 16;
 }
 void Screen_SettingsView::function_GPPf_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 20;
+  hUIHandheld.settingUploadRightPtr = 17;
 }
 void Screen_SettingsView::function_GPPg_ButtonClicked()
 {
-  hUIHandheld.settingUploadRightPtr = 21;
+  hUIHandheld.settingUploadRightPtr = 18;
 }
 void Screen_SettingsView::function_GPPh_ButtonClicked()
 {
+  hUIHandheld.settingUploadRightPtr = 19;
+}
+void Screen_SettingsView::function_GPPi_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 20;
+}
+void Screen_SettingsView::function_GPPj_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 21;
+}
+void Screen_SettingsView::function_GPPk_ButtonClicked()
+{
   hUIHandheld.settingUploadRightPtr = 22;
+}
+void Screen_SettingsView::function_GPPl_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 23;
+}
+void Screen_SettingsView::function_GPPm_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 24;
+}
+void Screen_SettingsView::function_GPPn_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 25;
+}
+void Screen_SettingsView::function_GPPo_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 26;
+}
+void Screen_SettingsView::function_GPPp_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 27;
+}
+void Screen_SettingsView::function_GPPq_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 28;
+}
+void Screen_SettingsView::function_GPPr_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 29;
+}
+void Screen_SettingsView::function_GPPs_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 30;
+}
+void Screen_SettingsView::function_GPPt_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 31;
+}
+void Screen_SettingsView::function_GPPu_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 32;
+}
+void Screen_SettingsView::function_GPPv_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 33;
+}
+void Screen_SettingsView::function_GPPw_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 34;
+}
+void Screen_SettingsView::function_GPPx_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 35;
+}
+void Screen_SettingsView::function_GPPy_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 36;
+}
+void Screen_SettingsView::function_GPPz_ButtonClicked()
+{
+  hUIHandheld.settingUploadRightPtr = 37;
 }

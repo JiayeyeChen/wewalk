@@ -21,6 +21,7 @@ void WEWALKFLASH_SaveSettings(WeWalkHandle* hwewalk)
 {
   W25Q_EraseSector(WEWALK_FLASH_SECTOR_NUMBER_UNILATERAL_SETTINGS_RIGHT);
   W25Q_EraseSector(WEWALK_FLASH_SECTOR_NUMBER_UNILATERAL_SETTINGS_RIGHT + 1);
+  W25Q_EraseSector(WEWALK_FLASH_SECTOR_NUMBER_UNILATERAL_SETTINGS_RIGHT + 2);
   for (uint16_t i = 0; i < sizeof(hwewalk->right->setting) / 4; i++)
   {
     W25Q_ProgramData(&hwewalk->right->setting.motorKt.b8[0] + 4 * i, 4, WEWALK_FLASH_SECTOR_NUMBER_UNILATERAL_SETTINGS_RIGHT * 16, i);

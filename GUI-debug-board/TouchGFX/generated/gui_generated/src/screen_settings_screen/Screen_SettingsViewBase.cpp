@@ -289,24 +289,6 @@ Screen_SettingsViewBase::Screen_SettingsViewBase() :
     textArea1_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UIPY));
     p3.add(textArea1_2);
 
-    textArea1_2_2.setPosition(17, 171, 222, 54);
-    textArea1_2_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_2_2.setLinespacing(0);
-    textArea1_2_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HUY1));
-    p3.add(textArea1_2_2);
-
-    textArea1_2_2_1.setPosition(17, 235, 222, 54);
-    textArea1_2_2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_2_2_1.setLinespacing(0);
-    textArea1_2_2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_21S9));
-    p3.add(textArea1_2_2_1);
-
-    textArea1_2_2_1_1.setPosition(17, 311, 222, 54);
-    textArea1_2_2_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_2_2_1_1.setLinespacing(0);
-    textArea1_2_2_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UARJ));
-    p3.add(textArea1_2_2_1_1);
-
     textArea1_2_1.setPosition(17, 92, 222, 54);
     textArea1_2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1_2_1.setLinespacing(0);
@@ -327,27 +309,6 @@ Screen_SettingsViewBase::Screen_SettingsViewBase() :
     flexButton_RightSineSingControlFrequency.setPosition(245, 90, 218, 49);
     p3.add(flexButton_RightSineSingControlFrequency);
 
-    flexButton_RightAccFieldMethodTargetPositionX.setBoxWithBorderPosition(0, 0, 218, 49);
-    flexButton_RightAccFieldMethodTargetPositionX.setBorderSize(5);
-    flexButton_RightAccFieldMethodTargetPositionX.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton_RightAccFieldMethodTargetPositionX.setAction(flexButtonCallback);
-    flexButton_RightAccFieldMethodTargetPositionX.setPosition(245, 169, 218, 49);
-    p3.add(flexButton_RightAccFieldMethodTargetPositionX);
-
-    flexButton_RightAccFieldMethodTargetPositionY.setBoxWithBorderPosition(0, 0, 218, 49);
-    flexButton_RightAccFieldMethodTargetPositionY.setBorderSize(5);
-    flexButton_RightAccFieldMethodTargetPositionY.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton_RightAccFieldMethodTargetPositionY.setAction(flexButtonCallback);
-    flexButton_RightAccFieldMethodTargetPositionY.setPosition(245, 239, 218, 49);
-    p3.add(flexButton_RightAccFieldMethodTargetPositionY);
-
-    flexButton_RightAccFieldMethodThreshold.setBoxWithBorderPosition(0, 0, 218, 49);
-    flexButton_RightAccFieldMethodThreshold.setBorderSize(5);
-    flexButton_RightAccFieldMethodThreshold.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton_RightAccFieldMethodThreshold.setAction(flexButtonCallback);
-    flexButton_RightAccFieldMethodThreshold.setPosition(245, 318, 218, 49);
-    p3.add(flexButton_RightAccFieldMethodThreshold);
-
     textArea_RightSineSwingControlMagnitude.setPosition(258, 20, 191, 49);
     textArea_RightSineSwingControlMagnitude.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_RightSineSwingControlMagnitude.setLinespacing(0);
@@ -363,30 +324,6 @@ Screen_SettingsViewBase::Screen_SettingsViewBase() :
     textArea_RightSineSwingControlFrequency.setWildcard(textArea_RightSineSwingControlFrequencyBuffer);
     textArea_RightSineSwingControlFrequency.setTypedText(touchgfx::TypedText(T___SINGLEUSE_244V));
     p3.add(textArea_RightSineSwingControlFrequency);
-
-    textArea_RightAccFieldMethodTargetPositionX.setPosition(258, 168, 191, 49);
-    textArea_RightAccFieldMethodTargetPositionX.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea_RightAccFieldMethodTargetPositionX.setLinespacing(0);
-    textArea_RightAccFieldMethodTargetPositionXBuffer[0] = 0;
-    textArea_RightAccFieldMethodTargetPositionX.setWildcard(textArea_RightAccFieldMethodTargetPositionXBuffer);
-    textArea_RightAccFieldMethodTargetPositionX.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AV77));
-    p3.add(textArea_RightAccFieldMethodTargetPositionX);
-
-    textArea_RightAccFieldMethodTargetPositionY.setPosition(258, 240, 191, 49);
-    textArea_RightAccFieldMethodTargetPositionY.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea_RightAccFieldMethodTargetPositionY.setLinespacing(0);
-    textArea_RightAccFieldMethodTargetPositionYBuffer[0] = 0;
-    textArea_RightAccFieldMethodTargetPositionY.setWildcard(textArea_RightAccFieldMethodTargetPositionYBuffer);
-    textArea_RightAccFieldMethodTargetPositionY.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HWZB));
-    p3.add(textArea_RightAccFieldMethodTargetPositionY);
-
-    textArea_RightAccFieldMethodThreshold.setPosition(258, 318, 191, 49);
-    textArea_RightAccFieldMethodThreshold.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea_RightAccFieldMethodThreshold.setLinespacing(0);
-    textArea_RightAccFieldMethodThresholdBuffer[0] = 0;
-    textArea_RightAccFieldMethodThreshold.setWildcard(textArea_RightAccFieldMethodThresholdBuffer);
-    textArea_RightAccFieldMethodThreshold.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FF9V));
-    p3.add(textArea_RightAccFieldMethodThreshold);
 
     swipeContainer1.add(p3);
 
@@ -562,7 +499,397 @@ Screen_SettingsViewBase::Screen_SettingsViewBase() :
 
     swipeContainer1.add(p4);
 
-    swipeContainer1.setSelectedPage(3);
+    P5.setWidth(480);
+    P5.setHeight(480);
+    flexButton_RightGPPi.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPi.setBorderSize(5);
+    flexButton_RightGPPi.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPi.setAction(flexButtonCallback);
+    flexButton_RightGPPi.setPosition(104, 27, 359, 52);
+    P5.add(flexButton_RightGPPi);
+
+    flexButton_RightGPPj.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPj.setBorderSize(5);
+    flexButton_RightGPPj.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPj.setAction(flexButtonCallback);
+    flexButton_RightGPPj.setPosition(104, 88, 359, 52);
+    P5.add(flexButton_RightGPPj);
+
+    flexButton_RightGPPk.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPk.setBorderSize(5);
+    flexButton_RightGPPk.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPk.setAction(flexButtonCallback);
+    flexButton_RightGPPk.setPosition(104, 145, 359, 52);
+    P5.add(flexButton_RightGPPk);
+
+    flexButton_RightGPPl.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPl.setBorderSize(5);
+    flexButton_RightGPPl.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPl.setAction(flexButtonCallback);
+    flexButton_RightGPPl.setPosition(104, 204, 359, 52);
+    P5.add(flexButton_RightGPPl);
+
+    flexButton_RightGPPm.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPm.setBorderSize(5);
+    flexButton_RightGPPm.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPm.setAction(flexButtonCallback);
+    flexButton_RightGPPm.setPosition(104, 264, 359, 52);
+    P5.add(flexButton_RightGPPm);
+
+    flexButton_RightGPPn.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPn.setBorderSize(5);
+    flexButton_RightGPPn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPn.setAction(flexButtonCallback);
+    flexButton_RightGPPn.setPosition(104, 320, 359, 52);
+    P5.add(flexButton_RightGPPn);
+
+    flexButton_RightGPPo.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPo.setBorderSize(5);
+    flexButton_RightGPPo.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPo.setAction(flexButtonCallback);
+    flexButton_RightGPPo.setPosition(104, 378, 359, 52);
+    P5.add(flexButton_RightGPPo);
+
+    textArea_RightGPPi.setPosition(118, 30, 331, 49);
+    textArea_RightGPPi.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPi.setLinespacing(0);
+    textArea_RightGPPiBuffer[0] = 0;
+    textArea_RightGPPi.setWildcard(textArea_RightGPPiBuffer);
+    textArea_RightGPPi.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C9GY));
+    P5.add(textArea_RightGPPi);
+
+    textArea_RightGPPj.setPosition(118, 91, 331, 49);
+    textArea_RightGPPj.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPj.setLinespacing(0);
+    textArea_RightGPPjBuffer[0] = 0;
+    textArea_RightGPPj.setWildcard(textArea_RightGPPjBuffer);
+    textArea_RightGPPj.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TP8F));
+    P5.add(textArea_RightGPPj);
+
+    textArea_RightGPPk.setPosition(118, 149, 331, 49);
+    textArea_RightGPPk.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPk.setLinespacing(0);
+    textArea_RightGPPkBuffer[0] = 0;
+    textArea_RightGPPk.setWildcard(textArea_RightGPPkBuffer);
+    textArea_RightGPPk.setTypedText(touchgfx::TypedText(T___SINGLEUSE_39J1));
+    P5.add(textArea_RightGPPk);
+
+    textArea_RightGPPl.setPosition(118, 206, 331, 49);
+    textArea_RightGPPl.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPl.setLinespacing(0);
+    textArea_RightGPPlBuffer[0] = 0;
+    textArea_RightGPPl.setWildcard(textArea_RightGPPlBuffer);
+    textArea_RightGPPl.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4JKS));
+    P5.add(textArea_RightGPPl);
+
+    textArea_RightGPPm.setPosition(118, 266, 331, 49);
+    textArea_RightGPPm.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPm.setLinespacing(0);
+    textArea_RightGPPmBuffer[0] = 0;
+    textArea_RightGPPm.setWildcard(textArea_RightGPPmBuffer);
+    textArea_RightGPPm.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WIBQ));
+    P5.add(textArea_RightGPPm);
+
+    textArea_RightGPPn.setPosition(118, 320, 331, 49);
+    textArea_RightGPPn.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPn.setLinespacing(0);
+    textArea_RightGPPnBuffer[0] = 0;
+    textArea_RightGPPn.setWildcard(textArea_RightGPPnBuffer);
+    textArea_RightGPPn.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DJQ9));
+    P5.add(textArea_RightGPPn);
+
+    textArea_RightGPPo.setPosition(118, 379, 331, 49);
+    textArea_RightGPPo.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPo.setLinespacing(0);
+    textArea_RightGPPoBuffer[0] = 0;
+    textArea_RightGPPo.setWildcard(textArea_RightGPPoBuffer);
+    textArea_RightGPPo.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1ZRY));
+    P5.add(textArea_RightGPPo);
+
+    textArea1_2_1_1_2.setPosition(17, 36, 87, 31);
+    textArea1_2_1_1_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2.setLinespacing(0);
+    textArea1_2_1_1_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WXCQ));
+    P5.add(textArea1_2_1_1_2);
+
+    textArea1_2_1_1_2_1.setPosition(17, 96, 87, 31);
+    textArea1_2_1_1_2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1.setLinespacing(0);
+    textArea1_2_1_1_2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NEPV));
+    P5.add(textArea1_2_1_1_2_1);
+
+    textArea1_2_1_1_2_1_1.setPosition(17, 155, 87, 31);
+    textArea1_2_1_1_2_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WZ5Y));
+    P5.add(textArea1_2_1_1_2_1_1);
+
+    textArea1_2_1_1_2_1_1_1.setPosition(17, 213, 87, 31);
+    textArea1_2_1_1_2_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9VYL));
+    P5.add(textArea1_2_1_1_2_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1.setPosition(17, 273, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A2X3));
+    P5.add(textArea1_2_1_1_2_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1.setPosition(17, 327, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_D7AI));
+    P5.add(textArea1_2_1_1_2_1_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1.setPosition(17, 384, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HKFF));
+    P5.add(textArea1_2_1_1_2_1_1_1_1_1_1);
+
+    swipeContainer1.add(P5);
+
+    p6.setWidth(480);
+    p6.setHeight(480);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_5.setPosition(23, 385, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_5.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_5.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_5.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3IVC));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_5);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_4.setPosition(23, 325, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_4.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_4.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VDZ7));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_4);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_3.setPosition(23, 264, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_3.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_35NQ));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_3);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_2.setPosition(23, 206, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_2.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LHRT));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_2);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1.setPosition(23, 30, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_182F));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1.setPosition(23, 96, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8FKZ));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1.setPosition(23, 148, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0NBC));
+    p6.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1);
+
+    flexButton_RightGPPp.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPp.setBorderSize(5);
+    flexButton_RightGPPp.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPp.setAction(flexButtonCallback);
+    flexButton_RightGPPp.setPosition(104, 25, 359, 52);
+    p6.add(flexButton_RightGPPp);
+
+    flexButton_RightGPPq.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPq.setBorderSize(5);
+    flexButton_RightGPPq.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPq.setAction(flexButtonCallback);
+    flexButton_RightGPPq.setPosition(104, 85, 359, 52);
+    p6.add(flexButton_RightGPPq);
+
+    flexButton_RightGPPr.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPr.setBorderSize(5);
+    flexButton_RightGPPr.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPr.setAction(flexButtonCallback);
+    flexButton_RightGPPr.setPosition(104, 140, 359, 52);
+    p6.add(flexButton_RightGPPr);
+
+    flexButton_RightGPPs.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPs.setBorderSize(5);
+    flexButton_RightGPPs.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPs.setAction(flexButtonCallback);
+    flexButton_RightGPPs.setPosition(104, 199, 359, 52);
+    p6.add(flexButton_RightGPPs);
+
+    textArea_RightGPPs.setPosition(118, 204, 331, 49);
+    textArea_RightGPPs.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPs.setLinespacing(0);
+    textArea_RightGPPsBuffer[0] = 0;
+    textArea_RightGPPs.setWildcard(textArea_RightGPPsBuffer);
+    textArea_RightGPPs.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7AVZ));
+    p6.add(textArea_RightGPPs);
+
+    flexButton_RightGPPt.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPt.setBorderSize(5);
+    flexButton_RightGPPt.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPt.setAction(flexButtonCallback);
+    flexButton_RightGPPt.setPosition(104, 256, 359, 52);
+    p6.add(flexButton_RightGPPt);
+
+    flexButton_RightGPPu.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPu.setBorderSize(5);
+    flexButton_RightGPPu.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPu.setAction(flexButtonCallback);
+    flexButton_RightGPPu.setPosition(104, 315, 359, 52);
+    p6.add(flexButton_RightGPPu);
+
+    flexButton_RightGPPv.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPv.setBorderSize(5);
+    flexButton_RightGPPv.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPv.setAction(flexButtonCallback);
+    flexButton_RightGPPv.setPosition(104, 376, 359, 52);
+    p6.add(flexButton_RightGPPv);
+
+    textArea_RightGPPt.setPosition(120, 258, 331, 49);
+    textArea_RightGPPt.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPt.setLinespacing(0);
+    textArea_RightGPPtBuffer[0] = 0;
+    textArea_RightGPPt.setWildcard(textArea_RightGPPtBuffer);
+    textArea_RightGPPt.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3GNL));
+    p6.add(textArea_RightGPPt);
+
+    textArea_RightGPPu.setPosition(120, 316, 331, 49);
+    textArea_RightGPPu.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPu.setLinespacing(0);
+    textArea_RightGPPuBuffer[0] = 0;
+    textArea_RightGPPu.setWildcard(textArea_RightGPPuBuffer);
+    textArea_RightGPPu.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1KQX));
+    p6.add(textArea_RightGPPu);
+
+    textArea_RightGPPv.setPosition(120, 375, 331, 49);
+    textArea_RightGPPv.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPv.setLinespacing(0);
+    textArea_RightGPPvBuffer[0] = 0;
+    textArea_RightGPPv.setWildcard(textArea_RightGPPvBuffer);
+    textArea_RightGPPv.setTypedText(touchgfx::TypedText(T___SINGLEUSE_U4XX));
+    p6.add(textArea_RightGPPv);
+
+    textArea_RightGPPp.setPosition(118, 29, 331, 49);
+    textArea_RightGPPp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPp.setLinespacing(0);
+    textArea_RightGPPpBuffer[0] = 0;
+    textArea_RightGPPp.setWildcard(textArea_RightGPPpBuffer);
+    textArea_RightGPPp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WIRN));
+    p6.add(textArea_RightGPPp);
+
+    textArea_RightGPPq.setPosition(118, 86, 331, 49);
+    textArea_RightGPPq.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPq.setLinespacing(0);
+    textArea_RightGPPqBuffer[0] = 0;
+    textArea_RightGPPq.setWildcard(textArea_RightGPPqBuffer);
+    textArea_RightGPPq.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PUWL));
+    p6.add(textArea_RightGPPq);
+
+    textArea_RightGPPr.setPosition(118, 142, 331, 49);
+    textArea_RightGPPr.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPr.setLinespacing(0);
+    textArea_RightGPPrBuffer[0] = 0;
+    textArea_RightGPPr.setWildcard(textArea_RightGPPrBuffer);
+    textArea_RightGPPr.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P7AS));
+    p6.add(textArea_RightGPPr);
+
+    swipeContainer1.add(p6);
+
+    p7.setWidth(480);
+    p7.setHeight(480);
+    flexButton_RightGPPw.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPw.setBorderSize(5);
+    flexButton_RightGPPw.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPw.setAction(flexButtonCallback);
+    flexButton_RightGPPw.setPosition(106, 26, 359, 52);
+    p7.add(flexButton_RightGPPw);
+
+    flexButton_RightGPPx.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPx.setBorderSize(5);
+    flexButton_RightGPPx.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPx.setAction(flexButtonCallback);
+    flexButton_RightGPPx.setPosition(106, 85, 359, 52);
+    p7.add(flexButton_RightGPPx);
+
+    flexButton_RightGPPy.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPy.setBorderSize(5);
+    flexButton_RightGPPy.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPy.setAction(flexButtonCallback);
+    flexButton_RightGPPy.setPosition(106, 145, 359, 52);
+    p7.add(flexButton_RightGPPy);
+
+    flexButton_RightGPPz.setBoxWithBorderPosition(0, 0, 359, 52);
+    flexButton_RightGPPz.setBorderSize(5);
+    flexButton_RightGPPz.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_RightGPPz.setAction(flexButtonCallback);
+    flexButton_RightGPPz.setPosition(106, 204, 359, 52);
+    p7.add(flexButton_RightGPPz);
+
+    textArea_RightGPPw.setPosition(124, 29, 331, 49);
+    textArea_RightGPPw.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPw.setLinespacing(0);
+    textArea_RightGPPwBuffer[0] = 0;
+    textArea_RightGPPw.setWildcard(textArea_RightGPPwBuffer);
+    textArea_RightGPPw.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4NQ6));
+    p7.add(textArea_RightGPPw);
+
+    textArea_RightGPPx.setPosition(124, 86, 331, 49);
+    textArea_RightGPPx.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPx.setLinespacing(0);
+    textArea_RightGPPxBuffer[0] = 0;
+    textArea_RightGPPx.setWildcard(textArea_RightGPPxBuffer);
+    textArea_RightGPPx.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WL80));
+    p7.add(textArea_RightGPPx);
+
+    textArea_RightGPPy.setPosition(120, 147, 331, 49);
+    textArea_RightGPPy.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPy.setLinespacing(0);
+    textArea_RightGPPyBuffer[0] = 0;
+    textArea_RightGPPy.setWildcard(textArea_RightGPPyBuffer);
+    textArea_RightGPPy.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A4WM));
+    p7.add(textArea_RightGPPy);
+
+    textArea_RightGPPz.setPosition(120, 207, 331, 49);
+    textArea_RightGPPz.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_RightGPPz.setLinespacing(0);
+    textArea_RightGPPzBuffer[0] = 0;
+    textArea_RightGPPz.setWildcard(textArea_RightGPPzBuffer);
+    textArea_RightGPPz.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C9XQ));
+    p7.add(textArea_RightGPPz);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1.setPosition(17, 34, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DNFT));
+    p7.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1.setPosition(17, 92, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6UW8));
+    p7.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1.setPosition(17, 153, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C7FO));
+    p7.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1);
+
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1_1.setPosition(17, 213, 87, 31);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1_1.setLinespacing(0);
+    textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_M0QV));
+    p7.add(textArea1_2_1_1_2_1_1_1_1_1_1_1_1_1_1_1_1_1);
+
+    swipeContainer1.add(p7);
+
+    swipeContainer1.setSelectedPage(6);
     add(swipeContainer1);
 }
 
@@ -694,27 +1021,6 @@ void Screen_SettingsViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
         //Call function_RightSineSwingControlFrequency_ButtonClicked
         function_RightSineSwingControlFrequency_ButtonClicked();
     }
-    if (&src == &flexButton_RightAccFieldMethodTargetPositionX)
-    {
-        //Interaction17
-        //When flexButton_RightAccFieldMethodTargetPositionX clicked call virtual function
-        //Call function_RightAccFieldMethodTargetPositionX_ButtonClicked
-        function_RightAccFieldMethodTargetPositionX_ButtonClicked();
-    }
-    if (&src == &flexButton_RightAccFieldMethodTargetPositionY)
-    {
-        //Interaction18
-        //When flexButton_RightAccFieldMethodTargetPositionY clicked call virtual function
-        //Call function_RightAccFieldMethodTargetPositionY_ButtonClicked
-        function_RightAccFieldMethodTargetPositionY_ButtonClicked();
-    }
-    if (&src == &flexButton_RightAccFieldMethodThreshold)
-    {
-        //Interaction19
-        //When flexButton_RightAccFieldMethodThreshold clicked call virtual function
-        //Call function_RightAccFieldMethodThreshold_ButtonClicked
-        function_RightAccFieldMethodThreshold_ButtonClicked();
-    }
     if (&src == &flexButton_RightGPPa)
     {
         //Interaction20
@@ -770,5 +1076,131 @@ void Screen_SettingsViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
         //When flexButton_RightGPPh clicked call virtual function
         //Call function_GPPh_ButtonClicked
         function_GPPh_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPi)
+    {
+        //Interaction28
+        //When flexButton_RightGPPi clicked call virtual function
+        //Call function_GPPi_ButtonClicked
+        function_GPPi_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPj)
+    {
+        //Interaction29
+        //When flexButton_RightGPPj clicked call virtual function
+        //Call function_GPPj_ButtonClicked
+        function_GPPj_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPk)
+    {
+        //Interaction30
+        //When flexButton_RightGPPk clicked call virtual function
+        //Call function_GPPk_ButtonClicked
+        function_GPPk_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPl)
+    {
+        //Interaction31
+        //When flexButton_RightGPPl clicked call virtual function
+        //Call function_GPPl_ButtonClicked
+        function_GPPl_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPm)
+    {
+        //Interaction32
+        //When flexButton_RightGPPm clicked call virtual function
+        //Call function_GPPm_ButtonClicked
+        function_GPPm_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPn)
+    {
+        //Interaction33
+        //When flexButton_RightGPPn clicked call virtual function
+        //Call function_GPPn_ButtonClicked
+        function_GPPn_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPo)
+    {
+        //Interaction34
+        //When flexButton_RightGPPo clicked call virtual function
+        //Call function_GPPo_ButtonClicked
+        function_GPPo_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPp)
+    {
+        //Interaction35
+        //When flexButton_RightGPPp clicked call virtual function
+        //Call function_GPPp_ButtonClicked
+        function_GPPp_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPq)
+    {
+        //Interaction36
+        //When flexButton_RightGPPq clicked call virtual function
+        //Call function_GPPq_ButtonClicked
+        function_GPPq_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPr)
+    {
+        //Interaction37
+        //When flexButton_RightGPPr clicked call virtual function
+        //Call function_GPPr_ButtonClicked
+        function_GPPr_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPs)
+    {
+        //Interaction38
+        //When flexButton_RightGPPs clicked call virtual function
+        //Call function_GPPs_ButtonClicked
+        function_GPPs_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPt)
+    {
+        //Interaction39
+        //When flexButton_RightGPPt clicked call virtual function
+        //Call function_GPPt_ButtonClicked
+        function_GPPt_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPu)
+    {
+        //Interaction40
+        //When flexButton_RightGPPu clicked call virtual function
+        //Call function_GPPu_ButtonClicked
+        function_GPPu_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPv)
+    {
+        //Interaction41
+        //When flexButton_RightGPPv clicked call virtual function
+        //Call function_GPPv_ButtonClicked
+        function_GPPv_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPw)
+    {
+        //Interaction42
+        //When flexButton_RightGPPw clicked call virtual function
+        //Call function_GPPw_ButtonClicked
+        function_GPPw_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPx)
+    {
+        //Interaction43
+        //When flexButton_RightGPPx clicked call virtual function
+        //Call function_GPPx_ButtonClicked
+        function_GPPx_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPy)
+    {
+        //Interaction44
+        //When flexButton_RightGPPy clicked call virtual function
+        //Call function_GPPy_ButtonClicked
+        function_GPPy_ButtonClicked();
+    }
+    if (&src == &flexButton_RightGPPz)
+    {
+        //Interaction45
+        //When flexButton_RightGPPz clicked call virtual function
+        //Call function_GPPz_ButtonClicked
+        function_GPPz_ButtonClicked();
     }
 }

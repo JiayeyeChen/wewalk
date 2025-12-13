@@ -251,28 +251,58 @@ void WEWALKUI_ReceiveSettings(WeWalkHandle* hwewalk)
     memcpy(&hwewalk->right->setting.sineSwingControlMagnitude, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
   else if (setting_ptr == 11)//sineSwingControlFrequency
     memcpy(&hwewalk->right->setting.sineSwingControlFrequency, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 12)//accelerationFieldMethodGaitPhaseDetectionXPosition
-    memcpy(&hwewalk->right->setting.accelerationFieldMethodGaitPhaseDetectionXPosition, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 13)//accelerationFieldMethodGaitPhaseDetectionYPosition
-    memcpy(&hwewalk->right->setting.accelerationFieldMethodGaitPhaseDetectionYPosition, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 14)//accelerationFieldMethodGaitPhaseDetectionThreshold
-    memcpy(&hwewalk->right->setting.accelerationFieldMethodGaitPhaseDetectionThreshold, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 15)//gppA
+  else if (setting_ptr == 12)//gppA
     memcpy(&hwewalk->right->setting.gppA, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 16)//gppB
+  else if (setting_ptr == 13)//gppB
     memcpy(&hwewalk->right->setting.gppB, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 17)//gppC
+  else if (setting_ptr == 14)//gppC
     memcpy(&hwewalk->right->setting.gppC, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 18)//gppD
+  else if (setting_ptr == 15)//gppD
     memcpy(&hwewalk->right->setting.gppD, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 19)//gppE
+  else if (setting_ptr == 16)//gppE
     memcpy(&hwewalk->right->setting.gppE, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 20)//gppF
+  else if (setting_ptr == 17)//gppF
     memcpy(&hwewalk->right->setting.gppF, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 21)//gppG
+  else if (setting_ptr == 18)//gppG
     memcpy(&hwewalk->right->setting.gppG, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
-  else if (setting_ptr == 22)//gppH
+  else if (setting_ptr == 19)//gppH
     memcpy(&hwewalk->right->setting.gppH, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 20)//gppI
+    memcpy(&hwewalk->right->setting.gppI, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 21)//gppJ
+    memcpy(&hwewalk->right->setting.gppJ, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 22)//gppK
+    memcpy(&hwewalk->right->setting.gppK, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 23)//gppL
+    memcpy(&hwewalk->right->setting.gppL, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 24)//gppM
+    memcpy(&hwewalk->right->setting.gppM, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 25)//gppN
+    memcpy(&hwewalk->right->setting.gppN, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 26)//gppO
+    memcpy(&hwewalk->right->setting.gppO, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 27)//gppP
+    memcpy(&hwewalk->right->setting.gppP, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 28)//gppQ
+    memcpy(&hwewalk->right->setting.gppQ, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 29)//gppR
+    memcpy(&hwewalk->right->setting.gppR, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 30)//gppS
+    memcpy(&hwewalk->right->setting.gppS, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 31)//gppT
+    memcpy(&hwewalk->right->setting.gppT, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 32)//gppU
+    memcpy(&hwewalk->right->setting.gppU, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 33)//gppV
+    memcpy(&hwewalk->right->setting.gppV, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 34)//gppW
+    memcpy(&hwewalk->right->setting.gppW, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 35)//gppX
+    memcpy(&hwewalk->right->setting.gppX, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 36)//gppY
+    memcpy(&hwewalk->right->setting.gppY, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
+  else if (setting_ptr == 37)//gppZ
+    memcpy(&hwewalk->right->setting.gppZ, &hwewalk->hUI->serialUI.rxMsgCfm[8], 4);
 }
 void WEWALKUI_SetLEDLogoPWMCCR(WeWalkUnilateralHandle* hwewalk, uint32_t ccr)
 {
