@@ -223,7 +223,7 @@ void SERIALPROTOCOLECHO_DatalogManagerReceive(SerialProtocolEchoHandle* hserial)
   		break;
 		case SERIALPROTOCOLECHO_DATALOG_TASK_SEND_LABEL:
     {
-      if (hserial->rxMsgCfm[0] == hserial->datalogLabel2SendPtr)
+      if (hserial->rxMsgCfm[0] == hserial->datalogLabel2SendPtr + 1)
       {
 				hserial->datalogLabel2SendPtr++;
       }
