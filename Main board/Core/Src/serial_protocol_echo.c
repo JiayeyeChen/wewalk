@@ -274,17 +274,19 @@ void SERIALPROTOCOLECHO_SendDataSlotLen(SerialProtocolEchoHandle* hserial)
   SERIALPROTOCOLECHO_TransmitCargo(hserial, (uint8_t*)txStr, numStrLen + 5);
 }
 
-void SERIALPROTOCOLECHO_SendDataSlotLabel(SerialProtocolEchoHandle* hserial, char* label_1, ...)
+void SERIALPROTOCOLECHO_SendDataSlotLabel(SerialProtocolEchoHandle* hserial, char label_1[], ...)
 {
 	va_list label_ptr;
   va_start(label_ptr, label_1);
  
   uint8_t numOfLabels = atoi(label_1);
+  static char buf[20];
   for (uint8_t i = 0; i < numOfLabels; i++)
   {
-    char buf[50];
     buf[0] = i + 1;
-    strcpy(&buf[1], va_arg(label_ptr, char*));
+//    strcpy(&buf[1], va_arg(label_ptr, char*));
+    char* tem_char = va_arg(label_ptr, char*);
+    memcpy(&buf[1], tem_char, 20);
     if (i == hserial->datalogLabel2SendPtr)
     {
       SERIALPROTOCOLECHO_TransmitCargo(hserial, (uint8_t*)buf, strlen(buf));

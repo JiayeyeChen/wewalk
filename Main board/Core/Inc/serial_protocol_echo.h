@@ -64,7 +64,7 @@ void SERIALPROTOCOLECHO_StartDatalog(SerialProtocolEchoHandle* hserial);
 void SERIALPROTOCOLECHO_EndDatalog(SerialProtocolEchoHandle* hserial);
 void SERIALPROTOCOLECHO_SetNewDatalogSlotLength(SerialProtocolEchoHandle* hserial, uint8_t len);
 void SERIALPROTOCOLECHO_SendDataSlotLen(SerialProtocolEchoHandle* hserial);
-void SERIALPROTOCOLECHO_SendDataSlotLabel(SerialProtocolEchoHandle* hserial, char* label_1, ...);
+void SERIALPROTOCOLECHO_SendDataSlotLabel(SerialProtocolEchoHandle* hserial, char label_1[], ...);
 void SERIALPROTOCOLECHO_SetNewDatalogSendLabelFunction(SerialProtocolEchoHandle* hserial, FuncTypeVoidVoid func);
 void SERIALPROTOCOLECHO_SetNewDatalogSlot(SerialProtocolEchoHandle* hserial, union FloatUInt8 (*data_slot));
 #endif
